@@ -1,0 +1,137 @@
+<type name="Dollar">
+	<nominal>150</nominal>
+	<lifetime>7200</lifetime>
+	<restock>0</restock>
+	<min>100</min>
+	<quantmin>5</quantmin>
+	<quantmax>100</quantmax>
+	<cost>100</cost>
+	<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+	<category name="tools"/>
+	<tag name="shelves"/>
+	<tag name="floor"/>
+	<usage name="Industrial"/>
+	<usage name="Farm"/>
+	<usage name="Town"/>
+	<usage name="Village"/>
+	<usage name="Hunting"/>
+	<usage name="Office"/>
+	<usage name="School"/>
+</type>
+
+<type name="Dollar_5">
+	<nominal>150</nominal>
+	<lifetime>7200</lifetime>
+	<restock>0</restock>
+	<min>100</min>
+	<quantmin>5</quantmin>
+	<quantmax>100</quantmax>
+	<cost>100</cost>
+	<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+	<category name="tools"/>
+	<tag name="shelves"/>
+	<tag name="floor"/>
+	<usage name="Industrial"/>
+	<usage name="Farm"/>
+	<usage name="Town"/>
+	<usage name="Village"/>
+	<usage name="Hunting"/>
+	<usage name="Office"/>
+	<usage name="School"/>
+</type>
+
+<type name="Dollar_10">
+	<nominal>150</nominal>
+	<lifetime>7200</lifetime>
+	<restock>0</restock>
+	<min>100</min>
+	<quantmin>5</quantmin>
+	<quantmax>100</quantmax>
+	<cost>100</cost>
+	<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+	<category name="tools"/>
+	<tag name="shelves"/>
+	<tag name="floor"/>
+	<usage name="Industrial"/>
+	<usage name="Farm"/>
+	<usage name="Town"/>
+	<usage name="Village"/>
+	<usage name="Hunting"/>
+	<usage name="Office"/>
+	<usage name="School"/>
+</type>
+
+<type name="Dollar_20">
+	<nominal>150</nominal>
+	<lifetime>7200</lifetime>
+	<restock>0</restock>
+	<min>100</min>
+	<quantmin>5</quantmin>
+	<quantmax>100</quantmax>
+	<cost>100</cost>
+	<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+	<category name="tools"/>
+	<tag name="shelves"/>
+	<tag name="floor"/>
+	<usage name="Industrial"/>
+	<usage name="Farm"/>
+	<usage name="Town"/>
+	<usage name="Village"/>
+	<usage name="Hunting"/>
+	<usage name="Office"/>
+	<usage name="School"/>
+</type>
+
+<type name="Dollar_50">
+	<nominal>150</nominal>
+	<lifetime>7200</lifetime>
+	<restock>0</restock>
+	<min>100</min>
+	<quantmin>5</quantmin>
+	<quantmax>100</quantmax>
+	<cost>100</cost>
+	<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+	<category name="tools"/>
+	<tag name="shelves"/>
+	<tag name="floor"/>
+	<usage name="Industrial"/>
+	<usage name="Farm"/>
+	<usage name="Town"/>
+	<usage name="Village"/>
+	<usage name="Hunting"/>
+	<usage name="Office"/>
+	<usage name="School"/>
+</type>
+
+<type name="Dollar_100">
+	<nominal>150</nominal>
+	<lifetime>7200</lifetime>
+	<restock>0</restock>
+	<min>100</min>
+	<quantmin>5</quantmin>
+	<quantmax>100</quantmax>
+	<cost>100</cost>
+	<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+	<category name="tools"/>
+	<tag name="shelves"/>
+	<tag name="floor"/>
+	<usage name="Industrial"/>
+	<usage name="Farm"/>
+	<usage name="Town"/>
+	<usage name="Village"/>
+	<usage name="Hunting"/>
+	<usage name="Office"/>
+	<usage name="School"/>
+</type>
+
+
+<type name="OffroadHatchback">
+    <nominal>0</nominal>
+    <lifetime>3888000</lifetime>
+    <restock>1800</restock>
+    <min>0</min>
+    <quantmin>-1</quantmin>
+    <quantmax>-1</quantmax>
+    <cost>100</cost>
+    <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+</type>

@@ -1,0 +1,52 @@
+WindowWidgetClass RemoveFundsDialog {
+ color 0 0 0 1
+ position 0 -0.04221
+ size 320 148.82101
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 1
+ vexactsize 1
+ priority 100
+ draggable 1
+ style rover_sim_black_2
+ title "Move Funds to Hands"
+ "title visible" 1
+ "title proportion" 1
+ font "gui/fonts/etelkatextpro22"
+ {
+  EditBoxWidgetClass Amount {
+   position 0 50
+   size 0.958 46
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   style Editor
+   text "10000"
+   "exact text" 1
+   font "gui/fonts/etelkatextpro28"
+  }
+  ButtonWidgetClass CancelButton {
+   size 0.5 29
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   text "Cancel"
+  }
+  ButtonWidgetClass MoveButton {
+   size 0.5 29
+   halign right_ref
+   valign bottom_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 1
+   text "Move"
+  }
+ }
+}

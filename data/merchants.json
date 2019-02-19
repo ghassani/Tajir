@@ -1,0 +1,248 @@
+[
+	{
+		"id": 1,
+		"name": "Hassan",
+		"object_name": "SurvivorM_Hassan",
+		"store": 1,
+		"unkillable": 1,
+		"position": [ 695.056,444.955,14600.3 ],
+		"orientation": [ 0,0,-0 ],
+		"transport_bays": [
+			{
+				"position":  [ 703.748, 0, 14615 ],
+				"orientation": [0,0,0],
+				"radius": 3
+			},
+			{
+				"position":  [ 691.855, 445.319, 14615 ],
+				"orientation": [0,0,0],
+				"radius": 3
+			}
+		],
+		"clothing": {
+			"head": "",
+			"shoulder" : "",
+			"headgear" : "",
+			"mask" : "",
+			"eyewear" : "",
+			"hands" : "",
+			"lefthand" : "",
+			"gloves" : "TacticalGloves_Green",
+			"armband" : "",
+			"vest" : "HighCapaoutpostVest_Olive",
+			"body" : "M65Jacket_Olive",
+			"back" : "AliceBag_Camo",
+			"hips" : "",
+			"legs" : "USMCPants_Woodland",
+			"feet" : "CombatBoots_Green"
+		}
+	},
+	{
+		"id": 2,
+		"name": "Maria",
+		"object_name": "SurvivorF_Maria",
+		"store": 1,
+		"unkillable": 0,
+		"position": [712.273,443.093,14586.2],
+		"orientation": [0,0,-0],
+		"clothing": {
+			"head": "",
+			"shoulder" : "",
+			"headgear" : "",
+			"mask" : "",
+			"eyewear" : "",
+			"hands" : "",
+			"lefthand" : "",
+			"gloves" : "TacticalGloves_Green",
+			"armband" : "",
+			"vest" : "HighCapaoutpostVest_Olive",
+			"body" : "M65Jacket_Olive",
+			"back" : "AliceBag_Camo",
+			"hips" : "",
+			"legs" : "USMCPants_Woodland",
+			"feet" : "CombatBoots_Green"
+		}
+	},
+	{
+		"id": 3,
+		"name": "Gabi",
+		"object_name": "SurvivorF_Gabi",
+		"store": 1,
+		"unkillable": 0,
+		"position": [701.452,453.195,14581.8],
+		"orientation": [0,0,-0],
+		"transport_bays": [
+			{
+				"position":  [ 703.748, 0, 14615 ],
+				"orientation": [0,0,0],
+				"radius": 5
+			}
+		],
+		"clothing": {
+			"head": "",
+			"shoulder" : "",
+			"headgear" : "",
+			"mask" : "",
+			"eyewear" : "",
+			"hands" : "",
+			"lefthand" : "",
+			"gloves" : "TacticalGloves_Green",
+			"armband" : "",
+			"vest" : "HighCapaoutpostVest_Olive",
+			"body" : "M65Jacket_Olive",
+			"back" : "AliceBag_Camo",
+			"hips" : "",
+			"legs" : "USMCPants_Woodland",
+			"feet" : "CombatBoots_Green"
+		}
+	},
+	{
+		"id": 4,
+		"name": "Boris",
+		"object_name": "SurvivorM_Boris",
+		"store": 2,
+		"unkillable": 1,
+		"position": [708.13,444.378,14607.3],
+		"orientation": [0.124637,0,-0],
+		"transport_bays": [
+			{
+				"position":  [ 703.748, 0, 14615 ],
+				"orientation": [0,0,0],
+				"radius": 5
+			}
+		],
+		"clothing": {
+			"head": "",
+			"shoulder" : "",
+			"headgear" : "",
+			"mask" : "",
+			"eyewear" : "",
+			"hands" : "",
+			"lefthand" : "",
+			"gloves" : "TacticalGloves_Green",
+			"armband" : "",
+			"vest" : "HighCapaoutpostVest_Olive",
+			"body" : "M65Jacket_Olive",
+			"back" : "AliceBag_Camo",
+			"hips" : "",
+			"legs" : "USMCPants_Woodland",
+			"feet" : "CombatBoots_Green"
+		}
+	},
+	{
+		"id": 5,
+		"name": "Boris",
+		"object_name": "SurvivorM_Boris",
+		"store": 1,
+		"unkillable": 1,
+		"position": [3693.4,402.012,5968.29],
+		"orientation": [149.184,0,-0],
+		"clothing": {
+			"head": "",
+			"shoulder" : "",
+			"headgear" : "",
+			"mask" : "",
+			"eyewear" : "",
+			"hands" : "",
+			"lefthand" : "",
+			"gloves" : "TacticalGloves_Green",
+			"armband" : "",
+			"vest" : "HighCapaoutpostVest_Olive",
+			"body" : "M65Jacket_Olive",
+			"back" : "AliceBag_Camo",
+			"hips" : "",
+			"legs" : "USMCPants_Woodland",
+			"feet" : "CombatBoots_Green"
+		}
+	},
+	{
+		"id": 6,
+		"name": "Hassan",
+		"object_name": "SurvivorM_Hassan",
+		"store": 1,
+		"unkillable": 1,
+		"position": [3735.94,402.535,5997.6],
+		"orientation": [155.365,0,-0],
+		"transport_bays": [
+			{
+				"position":  [ 3742.05, 0, 5987.2 ],
+				"orientation": [0,0,0],
+				"radius": 2
+			},
+			{
+				"position":  [ 3737.7, 0, 5992.58 ],
+				"orientation": [0,0,0],
+				"radius": 2
+			}
+		],
+		"clothing": {
+			"head": "",
+			"shoulder" : "",
+			"headgear" : "",
+			"mask" : "",
+			"eyewear" : "",
+			"hands" : "",
+			"lefthand" : "",
+			"gloves" : "TacticalGloves_Green",
+			"armband" : "",
+			"vest" : "HighCapaoutpostVest_Olive",
+			"body" : "M65Jacket_Olive",
+			"back" : "AliceBag_Camo",
+			"hips" : "",
+			"legs" : "USMCPants_Woodland",
+			"feet" : "CombatBoots_Green"
+		}
+	},
+	{
+		"id": 7,
+		"name": "Maria",
+		"object_name": "SurvivorF_Maria",
+		"store": 1,
+		"unkillable": 1,
+		"position": [3693.59,402.012,5967.55],
+		"orientation": [0,0,0],
+		"clothing": {
+			"head": "",
+			"shoulder" : "",
+			"headgear" : "",
+			"mask" : "",
+			"eyewear" : "",
+			"hands" : "",
+			"lefthand" : "",
+			"gloves" : "TacticalGloves_Green",
+			"armband" : "",
+			"vest" : "HighCapaoutpostVest_Olive",
+			"body" : "M65Jacket_Olive",
+			"back" : "AliceBag_Camo",
+			"hips" : "",
+			"legs" : "USMCPants_Woodland",
+			"feet" : "CombatBoots_Green"
+		}
+	},
+	{
+		"id": 8,
+		"name": "Gabi",
+		"object_name": "SurvivorF_Gabi",
+		"store": 1,
+		"unkillable": 1,
+		"position": [3721.88,402.126,5970.56],
+		"orientation": [-69.4249,0,0],
+		"clothing": {
+			"head": "",
+			"shoulder" : "",
+			"headgear" : "",
+			"mask" : "",
+			"eyewear" : "",
+			"hands" : "",
+			"lefthand" : "",
+			"gloves" : "TacticalGloves_Green",
+			"armband" : "",
+			"vest" : "HighCapaoutpostVest_Olive",
+			"body" : "M65Jacket_Olive",
+			"back" : "AliceBag_Camo",
+			"hips" : "",
+			"legs" : "USMCPants_Woodland",
+			"feet" : "CombatBoots_Green"
+		}
+	}
+]

@@ -1,0 +1,98 @@
+PanelWidgetClass HealthZoneEntry {
+ color 0.1294 0.1294 0.1294 1
+ position 0 0
+ size 0.3333 0.1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ style blank
+ {
+  PanelWidgetClass TajirDebugHealthZonePanel {
+   color 0.1176 0.1176 0.1176 1
+   size 0.98 0.98
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style DayZDefaultPanel
+   {
+    PanelWidgetClass TajirDebugHealthZonePanelInner {
+     color 0.1255 0.1255 0.1255 1
+     position 0 0
+     size 0.98 0.98
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style blank
+     {
+      TextWidgetClass TypeText {
+       position 0.5 0
+       size 0.5 0.5
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "Type"
+       font "gui/fonts/etelkatextpro16"
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass ZoneText {
+       position 0 0
+       size 0.5 0.5
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       text "Zone"
+       font "gui/fonts/etelkatextpro16"
+       "text halign" center
+       "text valign" center
+      }
+      TextWidgetClass ValueText {
+       position 0.5 0.5
+       size 0.5 0.5
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       priority 1
+       text "100"
+       font "gui/fonts/etelkatextpro14"
+       "text offset" -10 0
+       "text halign" right
+       "text valign" center
+      }
+      SimpleProgressBarWidgetClass ValueProgress {
+       position 0.5 0.55
+       size 0.5 0.4
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+      TextWidgetClass ValueLabel {
+       color 0 0.502 0.1255 1
+       position 0 0.5
+       size 0.5 0.5
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "Value"
+       font "gui/fonts/etelkatextpro14"
+       "text halign" center
+       "text valign" center
+      }
+     }
+    }
+   }
+  }
+ }
+}

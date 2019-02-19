@@ -1,0 +1,86 @@
+ImageSetClass {
+ Name "tajir_icons"
+ RefSize 1024 128
+ Textures {
+  ImageSetTextureClass {
+   mpix 3
+   path "{4991FE2FD85D9295}Tajir/gui/imagesets/icons.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass search {
+   Name "search"
+   Pos 0 0
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass check_circle {
+   Name "check_circle"
+   Pos 64 0
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass info_circle {
+   Name "info_circle"
+   Pos 128 0
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass close_circle {
+   Name "close_circle"
+   Pos 192 0
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass arrow_down {
+   Name "arrow_down"
+   Pos 256 0
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass arrow_up {
+   Name "arrow_up"
+   Pos 320 0
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass arrow_left {
+   Name "arrow_left"
+   Pos 384 0
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass arrow_right {
+   Name "arrow_right"
+   Pos 448 0
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass close {
+   Name "close"
+   Pos 512 0
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass dollar_bill_out {
+   Name "dollar_bill_out"
+   Pos 576 0
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass dollar_symbol {
+   Name "dollar_symbol"
+   Pos 640 0
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass eraser {
+   Name "eraser"
+   Pos 704 0
+   Size 64 64
+   Flags 0
+  }
+ }
+ Groups {
+ }
+}

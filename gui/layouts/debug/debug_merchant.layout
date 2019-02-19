@@ -1,0 +1,69 @@
+PanelWidgetClass DebugMerchantPlanel {
+ color 0 0 0 1
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ style rover_sim_colorable
+ {
+  PanelWidgetClass ActionPanel {
+   ignorepointer 1
+   position 0 0
+   size 1 0.05
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   {
+    ButtonWidgetClass TeleportToButton {
+     size 0.1 1
+     halign right_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style MenuDefault
+     text "Teleport"
+     font "gui/fonts/etelkatextpro12"
+    }
+    TextWidgetClass MerchantID {
+     ignorepointer 1
+     size 0.2 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+    }
+    TextWidgetClass MerchantName {
+     ignorepointer 1
+     position 0.2 0
+     size 0.2 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+    }
+    TextWidgetClass MerchantStoreId {
+     ignorepointer 1
+     position 0.4 0
+     size 0.2 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+    }
+   }
+  }
+  PanelWidgetClass HealthOverview {
+   ignorepointer 1
+   position 0 0.05
+   size 1 0.95
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+  }
+ }
+}

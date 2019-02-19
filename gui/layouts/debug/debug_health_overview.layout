@@ -1,0 +1,91 @@
+PanelWidgetClass DebugHealthOverview {
+ color 0 0 0 1
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass DebugHealthOverviewPanel {
+   ignorepointer 1
+   color 0 0 0 1
+   position 0 0
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style rover_sim_colorable
+   {
+    PanelWidgetClass DebugHealthBasic {
+     ignorepointer 1
+     position 0 0
+     size 1 0.05
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass IsAlive {
+       ignorepointer 1
+       position 0 0
+       size 0.2 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+      TextWidgetClass IsDestroyed {
+       ignorepointer 1
+       position 0.2 0
+       size 0.2 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+      TextWidgetClass IsWet {
+       ignorepointer 1
+       position 0.4 0
+       size 0.2 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+      TextWidgetClass BloodType {
+       ignorepointer 1
+       position 0.6 0
+       size 0.2 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+      TextWidgetClass ObjectType {
+       ignorepointer 1
+       position 0.8 0
+       size 0.2 1
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+     }
+    }
+    ScrollWidgetClass DebugHealthEntries {
+     ignorepointer 1
+     position 0 0.05
+     size 1 0.95
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style blank
+     "Scrollbar V" 1
+    }
+   }
+  }
+ }
+}

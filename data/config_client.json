@@ -1,0 +1,8 @@
+{
+	"keybindings": [
+		{
+			"name": "toggle_merchant_shop",
+			"keybinds": [ "kB" ]
+		}
+	]
+}

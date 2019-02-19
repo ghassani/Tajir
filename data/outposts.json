@@ -1,0 +1,146 @@
+[
+	{
+		"id": 1,
+		"name": "North West Outpost",
+		"position": [701.732, 443.621, 14595],
+		"radius": 30.00,
+		"safezone": {
+			"enabled": 0,
+			"remove_threats": 1,
+			"threats": [
+				"ZombieBase",
+				"Animal_CanisLupus"
+			],
+			"unlock_melee" : 1,
+			"unlock_weapon_fire" : 1,
+			"unlock_trap" : 0,
+			"unlock_restraining" : 0,
+			"unlock_bandaging": 0,
+			"unlock_sewing": 0,
+			"unlock_collect_blood": 0,
+			"unlock_defibrilate": 0,
+			"unlock_give_blood": 0,
+			"unlock_give_saline": 0,
+			"unlock_splint": 0,
+			"unlock_test_blood": 0,
+			"unlock_cover_head": 0,
+			"unlock_force_feed": 0,
+			"unlock_gag": 0,
+			"unlock_door_locking": 0
+		},
+		"objects": [
+			{
+				"name": "Land_Camp_House_brown",
+				"position": [714.186,444.719,14587.3],
+				"orientation": [170,0,0]
+			},
+			{
+				"name": "Land_Camp_House_white",
+				"position": [692.733,446.581,14601.9],
+				"orientation": [-110,0,0]
+			}
+		]
+	},
+	{
+		"id": 2,
+		"name": "Green Mountain Outpost",
+		"position": [3703.4, 409.725, 5975.02],
+		"radius": 100.00,
+		"safezone": {
+			"enabled": 1,
+			"remove_threats": 1,
+			"threats": [
+				"ZombieBase",
+				"Animal_CanisLupus"
+			],
+			"unlock_melee" : 1,
+			"unlock_weapon_fire" : 1,
+			"unlock_trap" : 0,
+			"unlock_restraining" : 0,
+			"unlock_bandaging": 0,
+			"unlock_sewing": 0,
+			"unlock_collect_blood": 0,
+			"unlock_defibrilate": 0,
+			"unlock_give_blood": 0,
+			"unlock_give_saline": 0,
+			"unlock_splint": 0,
+			"unlock_test_blood": 0,
+			"unlock_cover_head": 0,
+			"unlock_force_feed": 0,
+			"unlock_gag": 0,
+			"unlock_door_locking": 0
+		},
+		"objects": [
+			{
+				"name" : "Land_Repair_Center",
+				"position": [3731.38,404.739,6000.44],
+				"orientation": [-42,-4,0]
+			},
+			{
+				"name" : "Panel_Concrete_2",
+				"position": [3737.7,403.557,5992.58 ],
+				"orientation": [47.0001,4,0]
+			},
+			{
+				"name" : "ClutterCutter6x6",
+				"position": [  3738.12, 402.649, 5992.04 ],
+				"orientation": [ 0, 0, 0 ]
+			},
+			{
+				"name" : "ClutterCutter6x6",
+				"position": [ 3734.44, 402.446, 5995.38 ],
+				"orientation": [ 0, 0, 0 ]
+			},
+			{
+				"name" : "ClutterCutter6x6",
+				"position": [ 3740.16, 402.394, 5988 ],
+				"orientation": [ 0, 0, 0 ]
+			},
+			{
+				"name" : "ClutterCutter6x6",
+				"position": [ 3740.99, 402.754, 5991.18 ],
+				"orientation": [ 0, 0, 0 ]
+			},
+			{
+				"name" : "ClutterCutter6x6",
+				"position": [ 3732.23, 402.197, 5990.89 ],
+				"orientation": [ 0, 0, 0 ]
+			},
+			{
+				"name" : "ClutterCutter6x6",
+				"position": [ 3736.1, 402.168, 5987.08 ],
+				"orientation": [ 0, 0, 0 ]
+			},
+			{
+				"name" : "Panel_Concrete_2",
+				"position": [ 3742.05, 403.553, 5987.2 ],
+				"orientation": [ 47.0001, 6, 0 ]
+			},
+			{
+				"name" : "Land_Mil_CamoNet_Roof_east",
+				"position": [ 3695.35,  404.129, 5961.98 ],
+				"orientation": [ 0, 0, 0 ]
+			},
+			{
+				"name" : "Land_City_Stand_FastFood",
+				"position": [ 3692.52, 403.769, 6001.47 ],
+				"orientation": [ -24, 0, 0 ]
+			},
+			{
+				"name" : "Land_Mil_Tent_Big4",
+				"position": [ 3720.17, 403.252, 5970.78 ],
+				"orientation": [ -91, 0, 0 ]
+			},
+			{
+				"name" : "ClutterCutter6x6",
+				"position": [ 3743.73, 402.626, 5986.74 ],
+				"orientation": [ 0, 0, 0 ]
+			},
+			{
+				"name" : "ClutterCutter6x6",
+				"position": [ 3739.31, 402.133, 5984.7 ],
+				"orientation": [ 0, 0, 0 ]
+			}
+		]
+	}
+]

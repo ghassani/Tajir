@@ -1,0 +1,14 @@
+{
+	"base_object": "Dollar",
+	"dynamic_object": "DynamicDollar",
+	"player_start_currency": 100,
+	"objects": [
+		"Dollar",
+		"Dollar_5",
+		"Dollar_10",
+		"Dollar_20",
+		"Dollar_50",
+		"Dollar_100",
+		"DynamicDollar"
+	]
+}

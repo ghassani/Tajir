@@ -1,0 +1,135 @@
+PanelWidgetClass DebugSpawnPanel {
+ color 0 0 0 1
+ position 0 -0.00168
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ style rover_sim_colorable
+ {
+  TextListboxWidgetClass GameObjectList {
+   position 0 0.1
+   size 1 0.5
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style Editor
+   "title visible" 1
+   colums "Name;50;Type;50"
+   "highlight row" 1
+   font "gui/fonts/etelkatextpro14"
+  }
+  TextListboxWidgetClass ActionList {
+   position 0.5 0.62
+   size 0.5 0.28
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style Editor
+   "title visible" 1
+   colums "Action;100"
+   "highlight row" 1
+   font "gui/fonts/etelkatextpro16"
+  }
+  ButtonWidgetClass SpawnSelectedAtPlayer {
+   position 0.01325 0.61508
+   size 0.2 0.05
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   text "Spawn At Player"
+   font "gui/fonts/etelkatextpro16"
+  }
+  ButtonWidgetClass RunSelectedActionButton {
+   size 0.25 0.1
+   halign right_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   text "Run Selected Action"
+   font "gui/fonts/etelkatextpro22"
+  }
+  EditBoxWidgetClass SpawnPosX {
+   position 0.23792 0.62377
+   size 0.24262 0.03286
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style DefaultBorder
+   text "0.00"
+  }
+  EditBoxWidgetClass SpawnPosY {
+   position 0.23792 0.67076
+   size 0.24262 0.03286
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style DefaultBorder
+   text "0.00"
+  }
+  EditBoxWidgetClass SpawnPosZ {
+   position 0.23792 0.72615
+   size 0.24262 0.03286
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style DefaultBorder
+   text "0.00"
+  }
+  ButtonWidgetClass SpawnSelectedAtPosition {
+   position 0.28271 0.78292
+   size 0.2 0.05
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   text "Spawn At Position"
+   font "gui/fonts/etelkatextpro16"
+  }
+  ButtonWidgetClass GetCurrenPos {
+   position 0.12562 0.7846
+   size 0.15167 0.05
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   text "Current Position"
+   font "gui/fonts/etelkatextpro16"
+  }
+  PanelWidgetClass ActionPanel {
+   ignorepointer 1
+   position 0 0
+   size 1 0.1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   {
+    EditBoxWidgetClass ObjectSearchText {
+     position 0.01 0
+     size 0.3 0.48
+     halign right_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style Editor
+     text "Search Objects ..."
+     "Use default text" 1
+     "exact text" 1
+     font "gui/fonts/etelkatextpro22"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,34 @@
+PanelWidgetClass DebugMerchantsPanel {
+ color 0 0 0 1
+ position 0 0
+ size 1 1
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ style rover_sim_colorable
+ {
+  TextListboxWidgetClass MerchantList {
+   position 0 0
+   size 1 0.2
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style Editor
+   "title visible" 1
+   colums "ID;5;Name;35;Position;30;Orientation;30"
+   "highlight row" 1
+   font "gui/fonts/etelkatextpro22"
+  }
+  PanelWidgetClass MerchantInfoView {
+   ignorepointer 1
+   position 0 0.2
+   size 1 0.8
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+  }
+ }
+}
