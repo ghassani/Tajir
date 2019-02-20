@@ -7,14 +7,8 @@
  * file that was distributed with this source code.
  */
 
-class TajirStoreMenu extends UIScriptedMenu
+class TajirStoreMenu extends TajirStoreMenuBase
 {
-	protected TajirStoreComponent 			m_component;
-
-	protected TajirStore 					m_store;
-
-	protected TajirMerchant 				m_merchant;
-
 	protected TextWidget 					m_merchantName;
 
 	protected TextWidget 					m_playerCurrency;
@@ -24,38 +18,7 @@ class TajirStoreMenu extends UIScriptedMenu
 	protected Widget 						m_catalogRootWidget;
 
 	protected Widget 						m_catalogWidget;
-
-	protected ref TajirStoreTypeMenuBase 	m_catalogMenuScript;
-
-	/**
-	 * @brief      Constructor
-	 *
-	 * @param[in]  TajirStore     The store
-	 * @param[in]  TajirMerchant|NULL  The merchant
-	 */
-	void TajirStoreMenu( notnull TajirStoreComponent component, notnull TajirStore store, TajirMerchant merchant = NULL )
-	{		
-		m_component = component;
-		m_store 	= store;
-		m_merchant 	= merchant;
-	}
 	
-	/**
-	 * @brief      Destructor
-	 */
-	void ~TajirStoreMenu()
-	{
-	}
-	
-	/**
-	 * @brief      Get the menu id.
-	 *
-	 * @return     int
-	 */
-	override int GetID()	{
-		return TAJIR_MENU_STORE_ID;
-	}
-
 	/**
 	 * @brief      Gets the player preview.
 	 *
@@ -64,16 +27,6 @@ class TajirStoreMenu extends UIScriptedMenu
 	PlayerPreviewWidget GetPlayerPreview()
 	{
 		return m_merchantPreview;
-	}
-
-	/**
-	 * @brief      Gets the script.
-	 *
-	 * @return     The script.
-	 */
-	TajirStoreTypeMenuBase GetScript()
-	{
-		return m_catalogMenuScript;
 	}
 
 	/**
@@ -143,26 +96,6 @@ class TajirStoreMenu extends UIScriptedMenu
 	}
 
 	/**
-	 * @brief      Get the store.
-	 *
-	 * @return     TajirStore
-	 */
-	TajirStore GetStore()
-	{
-		return m_store;
-	}
-
-	/**
-	 * @brief      Gets the merchant.
-	 *
-	 * @return     TajirMerchant
-	 */
-	TajirMerchant GetMerchant()
-	{
-		return m_merchant;
-	}
-
-	/**
 	 * @brief      { function_description }
 	 *
 	 * @param[in]  timeslice  The timeslice
@@ -174,51 +107,6 @@ class TajirStoreMenu extends UIScriptedMenu
 		if ( m_catalogMenuScript )
 		{
 			m_catalogMenuScript.OnUpdate(timeslice );
-		}
-	}
-
-	/**
-	 * @brief      Locks the controls.
-	 *
-	 * @return     void
-	 */
-	override void LockControls()
-	{
-		super.LockControls();
-
-		if ( GetGame().GetMission() )
-		{
-			GetGame().GetMission().PlayerControlDisable();
-		}
-	}
-
-	/**
-	 * @brief      Unlocks the controls.
-	 *
-	 * @return     void
-	 */
-	override void UnlockControls()
-	{
-		super.UnlockControls();
-		
-		if ( GetGame().GetMission() )
-		{
-			GetGame().GetMission().PlayerControlEnable();
-		}
-	}
-
-	/**
-	 * @brief      Called when the menu is hidden.
-	 *
-	 * @return     void
-	 */
-	override void OnHide()
-	{
-		super.OnHide();
-
-		if ( m_component )
-		{
-			m_component.OnMenuClose();
 		}
 	}
 
@@ -264,7 +152,7 @@ class TajirStoreMenu extends UIScriptedMenu
 	/**
 	 * @brief      Update the players currency display
 	 */
-	void UpdatePlayerCurrency()
+	override void UpdatePlayerCurrency()
 	{
 		TajirCurrencyComponent currency = TajirCurrencyComponent.GetInstance();
 		
@@ -285,7 +173,7 @@ class TajirStoreMenu extends UIScriptedMenu
 	 *
 	 * @param[in]  ref array<TajirStore>  Array of stores that received updates.
 	 */
-	void OnInventoryUpdateReceived( ref array<TajirStore> updatedStores )
+	override void OnInventoryUpdateReceived( ref array<TajirStore> updatedStores )
 	{
 		if ( updatedStores.Find( m_store ) && m_catalogMenuScript )
 		{
@@ -298,7 +186,7 @@ class TajirStoreMenu extends UIScriptedMenu
 	 *
 	 * @param[in]  response  The response
 	 */
-	void OnTransactionResponseReceived( TajirStoreTransactionResponse response )
+	override void OnTransactionResponseReceived( TajirStoreTransactionResponse response )
 	{
 		UpdatePlayerCurrency();
 

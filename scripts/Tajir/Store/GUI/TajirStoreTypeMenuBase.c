@@ -9,11 +9,11 @@
 
 class TajirStoreTypeMenuBase extends ScriptedWidgetEventHandler
 {
-	protected TajirStoreMenu 	m_menu;
+	protected TajirStoreMenuBase 	m_menu;
 
-	protected TajirStore 		m_store;
+	protected TajirStore 			m_store;
 
-	protected TajirMerchant 	m_merchant;
+	protected TajirMerchant 		m_merchant;
 
 	protected ref TajirStoreTransactionRequest m_transaction;
 
@@ -60,7 +60,7 @@ class TajirStoreTypeMenuBase extends ScriptedWidgetEventHandler
 	 */
 	void OnWidgetScriptInit( Widget w )
 	{
-		m_menu  	= TajirStoreMenu.Cast( GetGame().GetUIManager().GetMenu() );
+		m_menu  	= TajirStoreMenuBase.Cast( GetGame().GetUIManager().GetMenu() );
 
 		if ( m_menu != NULL )
 		{

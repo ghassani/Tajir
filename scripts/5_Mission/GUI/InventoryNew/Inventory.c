@@ -28,6 +28,8 @@ modded class Inventory
 	void ~Inventory()
 	{
 		WidgetEventHandler.GetInstance().UnregisterWidget( m_playerCurrency.FindAnyWidget( "RemoveFundsButton" ) );
+		WidgetEventHandler.GetInstance().UnregisterWidget( m_playerCurrency.FindAnyWidget( "CancelButton" ) );
+		WidgetEventHandler.GetInstance().UnregisterWidget( m_playerCurrency.FindAnyWidget( "MoveButton" ) );
 	}
 
 	void OnRemoveFundsToggle()

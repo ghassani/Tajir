@@ -20,7 +20,7 @@ class TajirStoreComponent extends TajirComponentBase
 
 	protected ref array<ref TajirStoreTypeBase> 	m_handlers;
 
-	protected ref TajirStoreMenu					m_menu;
+	protected ref TajirStoreMenuBase				m_menu;
 
 	/**
 	 * @brief      { function_description }
@@ -41,8 +41,6 @@ class TajirStoreComponent extends TajirComponentBase
 		m_handlers 				= new array<ref TajirStoreTypeBase>;
 		m_transactions			= new TajirStoreTransactionManager( this );
 		m_menu 					= NULL;
-
-		AddStoreTypeHandler( new TajirStoreTypeDefault() );
 	}
 	
 	/**
@@ -341,9 +339,15 @@ class TajirStoreComponent extends TajirComponentBase
 	{
 		if ( !GetGame().GetUIManager().GetMenu() )
 		{
-			m_menu = new TajirStoreMenu( this, store, merchant );
+			if ( store.GetTypeHandler() )
+			{
+				m_menu = store.GetTypeHandler().CreateMenu( this, store, merchant );
 
-			GetGame().GetUIManager().ShowScriptedMenu( m_menu, NULL );
+				if ( m_menu )
+				{
+					GetGame().GetUIManager().ShowScriptedMenu( m_menu, NULL );
+				}
+			}
 		}
 	}
 

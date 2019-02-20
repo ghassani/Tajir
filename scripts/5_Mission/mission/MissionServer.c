@@ -17,12 +17,20 @@ modded class MissionServer
 
 		m_tajirManager.RegisterComponent( new TajirCurrencyComponent( m_tajirManager ) );
 		m_tajirManager.RegisterComponent( new TajirItemComponent( m_tajirManager ) );
-		m_tajirManager.RegisterComponent( new TajirStoreComponent( m_tajirManager ) );
+
+		ref TajirStoreComponent storecomp = new TajirStoreComponent( m_tajirManager );
+
+		storecomp.AddStoreTypeHandler( new TajirStoreTypeDefault() );
+
+		m_tajirManager.RegisterComponent( storecomp );
+
 		m_tajirManager.RegisterComponent( new TajirMerchantComponent( m_tajirManager ) );
 		m_tajirManager.RegisterComponent( new TajirOutpostComponent( m_tajirManager ) );
 #ifdef TAJIR_DEBUG_MENU
 		m_tajirManager.RegisterComponent( new TajirDebugComponent( m_tajirManager ) );
 #endif
+
+		
 	}
 	
 	void ~MissionServer()

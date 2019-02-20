@@ -46,6 +46,21 @@ class TajirStoreTypeBase
 	}
 
 	/**
+	 * @brief      Creates a menu.
+	 *
+	 * @param[in]  TajirStoreComponent  The tajir store component
+	 * @param[in]  TajirStore           The tajir store
+	 * @param[in]  merchant             The merchant
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	TajirStoreMenuBase CreateMenu( notnull TajirStoreComponent component, notnull TajirStore store, TajirMerchant merchant = NULL )
+	{
+		Error( "Method " + ClassName() + ":CreateMenu must be overloaded" );
+		return NULL;
+	}
+
+	/**
 	 * @brief      { function_description }
 	 *
 	 * @param[in]  TajirMerchant          The tajir merchant

@@ -137,8 +137,6 @@ class TajirStoreTypeDefaultMenu extends TajirStoreTypeMenuBase
 		m_searchText 				= EditBoxWidget.Cast( w.FindAnyWidget( "SearchText" ) );
 		m_buyQuantity 				= EditBoxWidget.Cast( w.FindAnyWidget( "BuyQuantity" ) );
 
-
-
 		PopulateBuyCatalogSelection();
 		SetProcessingState( false );
 		ToggleBuyPanel();
@@ -904,6 +902,7 @@ class TajirStoreTypeDefaultMenu extends TajirStoreTypeMenuBase
 				{
 					if ( ( selectedItem + 1 ) <= totalItems )
 					{
+						m_buyInventory.EnsureVisible( selectedItem );
 						m_buyInventory.SelectRow( selectedItem );
 					}
 				}
@@ -922,6 +921,7 @@ class TajirStoreTypeDefaultMenu extends TajirStoreTypeMenuBase
 			{
 				if ( ( selectedItem + 1 ) <= totalItems )
 				{
+					m_sellInventory.EnsureVisible( selectedItem );
 					m_sellInventory.SelectRow( selectedItem );
 				}
 			}
