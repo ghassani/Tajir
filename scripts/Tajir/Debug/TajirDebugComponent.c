@@ -227,7 +227,7 @@ class TajirDebugComponent extends TajirComponentBase
 				PlayerStat<float> waterStat = PlayerStat<float>.Cast( player.GetPlayerStats().GetStatObject( EPlayerStats_v100.WATER ) );
 				if ( params.param2 )
 				{					
-					waterStat.Set( waterStat.Set( waterStat.GetMax() ) );
+					waterStat.Set( waterStat.GetMax() );
 					TajirLogD( "Replenished Player Water Level", ClassName() );
 				}
 				else
@@ -242,7 +242,7 @@ class TajirDebugComponent extends TajirComponentBase
 				PlayerStat<float> energyStat = PlayerStat<float>.Cast( player.GetPlayerStats().GetStatObject( EPlayerStats_v100.ENERGY ) );
 				if ( params.param2 )
 				{					
-					energyStat.Set( waterStat.Set( energyStat.GetMax() ) );
+					energyStat.Set( energyStat.GetMax() );
 					TajirLogD( "Replenished Player Energy Level", ClassName() );
 
 				}

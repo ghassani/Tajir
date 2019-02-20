@@ -103,7 +103,7 @@ class CurrencyBase extends Inventory_Base
 	 */
 	override void EEItemLocationChanged( notnull InventoryLocation oldLoc, notnull InventoryLocation newLoc )
 	{
-		suoer.EEItemLocationChanged( oldLoc, newLoc );
+		super.EEItemLocationChanged( oldLoc, newLoc );
 	}
 
 	/**
