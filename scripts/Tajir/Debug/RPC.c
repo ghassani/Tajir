@@ -28,5 +28,5 @@ enum TajirDebugComponentRPC
 	ClientRPC_TeleportMerchant 				= 0x544A5313, // 1 param - int id of merchant
 	ClientRPC_UpdateSafeZoneSettings 		= 0x544A5314, // 2 param - int id of outpost, TajirOutpostSafeZoneConfig
 	ClientRPC_SpawnObjectAtPosition 		= 0x544A5315, // 2 param - string, vector
-	ClientRPC_UpdatePlayerStat 				= 0x544A5315, // 2 param - int, int
+	ClientRPC_UpdatePlayerStat 				= 0x544A5316, // 2 param - int, int
 }

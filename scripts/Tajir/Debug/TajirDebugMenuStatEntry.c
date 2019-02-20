@@ -58,12 +58,12 @@ class TajirDebugMenuStatEntry
 		{
 			if ( !state.HasFloatStat( m_stat ) )
 			{
-				TajirLogE( string.Format( "Stat %1 does not exist", m_stat ), ClassName() );
+				//TajirLogD( string.Format( "Stat %1 does not exist", m_stat ), ClassName() );
 				return;
 			}
 			else if ( !state.HasFloatStatMax( m_stat ) )
 			{
-				TajirLogE( string.Format( "Stat %1 max does not exist", m_stat ), ClassName() );
+				//TajirLogD( string.Format( "Stat %1 max does not exist", m_stat ), ClassName() );
 				return;
 			}
 
