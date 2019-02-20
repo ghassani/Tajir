@@ -9,6 +9,7 @@
 
 class CurrencyBase extends Inventory_Base
 {
+
 	/**
 	 * @brief      Gets the currency value.
 	 *
@@ -73,24 +74,7 @@ class CurrencyBase extends Inventory_Base
 			return;
 		}
 
-		man.AddCurrency( GetCurrencyValue() );
-
-		if ( GetGame().IsServer() )
-		{
-			this.Delete();
-		}
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  player  The player
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	override void OnInventoryExit( Man player )
-	{
-		super.OnInventoryExit( player );
+		RedeemCurrency( man );
 	}
 
 	/**
@@ -104,19 +88,16 @@ class CurrencyBase extends Inventory_Base
 	override void EEItemLocationChanged( notnull InventoryLocation oldLoc, notnull InventoryLocation newLoc )
 	{
 		super.EEItemLocationChanged( oldLoc, newLoc );
-	}
 
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  InventoryLocation  The inventory location
-	 * @param[in]  InventoryLocation  The inventory location
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	override void OnItemAttachmentSlotChanged( notnull InventoryLocation oldLoc, notnull InventoryLocation newLoc )
-	{
-		super.OnItemAttachmentSlotChanged( oldLoc, newLoc );
+		if ( newLoc.GetType() == InventoryLocationType.CARGO )
+		{
+			ManBase owner = ManBase.Cast( GetHierarchyRootPlayer() );
+
+			if ( owner )
+			{
+				RedeemCurrency( owner );
+			}			
+		}
 	}
 
 	/**
@@ -130,5 +111,15 @@ class CurrencyBase extends Inventory_Base
 	override void OnItemLocationChanged( EntityAI old_owner, EntityAI new_owner )
 	{
 		super.OnItemLocationChanged( old_owner, new_owner );
+	}
+
+	protected void RedeemCurrency( notnull ManBase redeemer )
+	{
+		if ( GetGame().IsServer() )
+		{
+			redeemer.AddCurrency( GetCurrencyValue() );
+			Delete();
+			SetSynchDirty();
+		}
 	}
 }

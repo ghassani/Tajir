@@ -13,6 +13,13 @@ class DynamicCurrencyBase extends CurrencyBase
 
 	void DynamicCurrencyBase()
 	{
+
+	}
+
+	override void InitItemVariables()
+	{
+		super.InitItemVariables();
+
 		int randMin  = GetGame().ConfigGetInt( "CfgVehicles " + ClassName() + " minRandomCurrency" );
 		int randMax = GetGame().ConfigGetInt( "CfgVehicles " + ClassName() + " maxRandomCurrency" );
 
@@ -52,25 +59,36 @@ class DynamicCurrencyBase extends CurrencyBase
 
 		if ( !ctx.Write( m_currencyValue ) )
 		{
-			TajirLogE( "[OnStoreSave] Error Writing m_currencyValue", ClassName() );
+			Print( "Error Writing " + ClassName() + ".m_currencyValue" );
 		}
 	}
 
 	override bool OnStoreLoad( ParamsReadContext ctx, int version )
 	{
-		if ( !ctx.Read( m_currencyValue ) )
+		if ( !super.OnStoreLoad( ctx, version ) )
 		{
-			TajirLogE( "[OnStoreLoad] Error Reading m_currencyValue", ClassName() );
 			return false;
 		}
 
-		return super.OnStoreLoad( ctx, version );
+		if ( !ctx.Read( m_currencyValue ) )
+		{
+			Print( "Error Reading " + ClassName() + ".m_currencyValue" );
+
+			return false;
+		}
+
+		return true;
 	}
 
 	override string GetDisplayName()
 	{
-		string display = super.GetDisplayName();
+		TajirCurrencyComponent comp = TajirCurrencyComponent.GetInstance();
 
-		return string.Format( display, m_currencyValue );
+		if ( !comp )
+		{
+			return super.GetDisplayName();
+		}
+		
+		return string.Format( "%1%2", comp.GetCurrencySymbol(), m_currencyValue );
 	}
 }

@@ -183,7 +183,7 @@ class CfgVehicles
 	class DynamicDollar: DynamicCurrencyBase
 	{
 		scope=2;
-		displayName="%1 Dollars";
+		displayName="%1%2 Dollars";
 		descriptionShort="American dollars are accepted everywhere.";
 		model="Tajir\assets\5stack.p3d";
 		currencyValue=0;
