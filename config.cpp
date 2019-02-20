@@ -60,7 +60,7 @@ class CfgMods
 			class missionScriptModule
 			{
 				value = "";
-				files[] = { "Tajir/scripts/Defines.c", "Tajir/scripts/5_Mission" };
+				files[] = { "Tajir/scripts/Defines.c", "Tajir/scripts/Tajir_Mission", "Tajir/scripts/5_Mission" };
 			};
 		};
 	};
