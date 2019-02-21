@@ -28,4 +28,13 @@ public:
     void addCatalog();
 
     void addItem( const QModelIndex& catalogIndex );
+
+    void setSelectedItemsBuyStatus( const QModelIndexList& selected, bool state );
+    void setSelectedItemsSellStatus( const QModelIndexList& selected, bool state );
+
+    void deleteSelectedItems( const QModelIndexList& selected );
+    void deleteSelectedCatalogs( const QModelIndexList& selected );
+    void setSelectedCatalogsHiddenState( const QModelIndexList& selected, bool state );
+
+
 };

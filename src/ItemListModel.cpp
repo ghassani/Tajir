@@ -1,5 +1,6 @@
 #include "ItemListModel.h"
 #include <QColor>
+#include <QAbstractItemView>
 
 ItemListModel::ItemListModel( QObject *parent )
     : QAbstractItemModel( parent ),
@@ -40,6 +41,13 @@ QVariant ItemListModel::data( const QModelIndex &index, int role ) const
                 else  if ( item->isBundle() && !item->object_name.length() && !item->display_name.length() )
                 {
                     return QColor( "red" );
+                }
+                else
+                {
+                    if ( item->isBundle() )
+                    {
+                        return QColor( "green" );
+                    }
                 }
             }
         }
@@ -287,20 +295,25 @@ void ItemListModel::removeItem( const QModelIndex& index )
         return;
     }
 
-    beginResetModel();
-
     TajirItemJson * item = getItem( index );
 
-    if ( index.parent().isValid() )
+    if ( item )
     {
-        item->parent->items.removeOne( item );
-    }
-    else
-    {
-        items.removeOne( item );
-    }
+        beginResetModel();
 
-    endResetModel();
+        if ( index.parent().isValid() )
+        {
+            item->parent->items.removeOne( item );
+        }
+        else
+        {
+            items.removeOne( item );
+        }
+
+        endResetModel();
+
+        delete item;
+    }
 }
 
 void ItemListModel::addItemAsChild( const QModelIndex& index )

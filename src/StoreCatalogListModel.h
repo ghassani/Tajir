@@ -71,5 +71,10 @@ public:
     bool removeRows( int position, int rows, const QModelIndex &parent = QModelIndex() ) override;
 
     void addItem( TajirStoreCatalogJson * catalog, TajirStoreCatalogItemJson * item );
+
+    void removeCatalog( const QModelIndex& index );
+
+    void removeItem( const QModelIndex& index );
+
 };
 

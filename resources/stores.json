@@ -4,7 +4,9 @@
         "name": "Default Store",
         "type": "default",
         "log_transactions": 1,
+        "save_every_minutes": 5,
         "restock_every_minutes": 30,
+        "show_out_of_stock": 1,
         "allowed_conditions": [
             0,
             1
@@ -15,64 +17,8 @@
                 "hidden": 0,
                 "items": [
                     {
-                        "_comment": "Colt1911",
-                        "item_id": 100,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Engraved1911",
-                        "item_id": 101,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "CZ75",
                         "item_id": 102,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "DE",
-                        "item_id": 103,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Derringer_Black",
-                        "item_id": 104,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Derringer_Pink",
-                        "item_id": 105,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Derringer_Grey",
-                        "item_id": 106,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Flaregun",
-                        "item_id": 107,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -87,64 +33,8 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Glock19",
-                        "item_id": 109,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "LongHorn",
-                        "item_id": 110,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Magnum",
-                        "item_id": 111,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "MKII",
-                        "item_id": 112,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "P1",
-                        "item_id": 113,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "MakarovPB",
-                        "item_id": 114,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "MakarovIJ70",
                         "item_id": 115,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Red9",
-                        "item_id": 116,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -156,40 +46,8 @@
                 "name": "Shotguns",
                 "items": [
                     {
-                        "_comment": "Izh43Shotgun",
-                        "item_id": 117,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "SawedoffIzh43Shotgun",
-                        "item_id": 118,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Mp133Shotgun",
                         "item_id": 119,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mp133Shotgun_PistolGrip",
-                        "item_id": 120,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Saiga12KShotgun",
-                        "item_id": 121,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -203,14 +61,6 @@
                     {
                         "_comment": "MP5K",
                         "item_id": 122,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "PM73Rak",
-                        "item_id": 123,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -302,30 +152,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Scout",
-                        "item_id": 134,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Scout_Black",
-                        "item_id": 135,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Scout_Green",
-                        "item_id": 136,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "SKS",
                         "item_id": 137,
                         "quantity": 100,
@@ -352,78 +178,6 @@
                     {
                         "_comment": "SVD",
                         "item_id": 140,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Winchester70",
-                        "item_id": 141,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Winchester70_Black",
-                        "item_id": 142,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Winchester70_Green",
-                        "item_id": 143,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "VSS",
-                        "item_id": 144,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ruger1022",
-                        "item_id": 145,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ruger1022_Black",
-                        "item_id": 146,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ruger1022_Green",
-                        "item_id": 147,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Trumpet",
-                        "item_id": 148,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Repeater",
-                        "item_id": 149,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -476,127 +230,15 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "B95",
-                        "item_id": 156,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "B95_Black",
-                        "item_id": 157,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "B95_Green",
-                        "item_id": 158,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
                     }
                 ]
             },
             {
                 "name": "Assault Rifles",
-                "items": [
-                    {
-                        "_comment": "AK74",
-                        "item_id": 159,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AK74_Black",
-                        "item_id": 160,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AK74_Green",
-                        "item_id": 161,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AKS74U",
-                        "item_id": 162,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AKS74U_Black",
-                        "item_id": 163,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AKS74U_Green",
-                        "item_id": 164,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AK101",
-                        "item_id": 165,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AK101_Black",
-                        "item_id": 166,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AK101_Green",
-                        "item_id": 167,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                "items": [                    
                     {
                         "_comment": "AKM",
                         "item_id": 168,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AugSteyr",
-                        "item_id": 169,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "FAL",
-                        "item_id": 170,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -625,29 +267,12 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Groza",
-                        "item_id": 174,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
                     }
                 ]
             },
             {
                 "name": "Machine Guns",
-                "items": [
-                    {
-                        "_comment": "M249",
-                        "item_id": 175,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    }
-                ]
+                "items": []
             },
             {
                 "name": "Weapon Muzzles",
@@ -680,14 +305,6 @@
                     {
                         "_comment": "SKS_Bayonet",
                         "item_id": 179,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mosin_Compensator",
-                        "item_id": 180,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -732,47 +349,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Groza_Barrel_Short",
-                        "item_id": 186,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Groza_Barrel_Grip",
-                        "item_id": 187,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Groza_Barrel_Suppressor",
-                        "item_id": 188,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "MakarovPBSuppressor",
-                        "item_id": 189,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Aug_Barrel",
-                        "item_id": 190,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    }
+                    }                    
                 ]
             },
             {
@@ -786,55 +363,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "BUISOptic",
-                        "item_id": 192,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "M68Optic",
-                        "item_id": 193,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "M4_T3NRDSOptic",
-                        "item_id": 194,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "FNP45_MRDSOptic",
-                        "item_id": 195,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Crossbow_RedpointOptic",
-                        "item_id": 196,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "ReflexOptic",
-                        "item_id": 197,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                    },                    
                     {
                         "_comment": "ACOGOptic",
                         "item_id": 198,
@@ -852,22 +381,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "KashtanOptic",
-                        "item_id": 200,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "LongrangeOptic",
-                        "item_id": 201,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "HuntingOptic",
                         "item_id": 202,
                         "quantity": 100,
@@ -876,32 +389,8 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "PistolOptic",
-                        "item_id": 203,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "PSO1Optic",
                         "item_id": 204,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "PSO11Optic",
-                        "item_id": 205,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "GrozaOptic",
-                        "item_id": 206,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -1090,64 +579,8 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "AKS74U_Bttstck",
-                        "item_id": 229,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AKS74U_Bttstck_Black",
-                        "item_id": 230,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AKS74U_Bttstck_Green",
-                        "item_id": 231,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "MP5k_StockBttstck",
                         "item_id": 232,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Red9Bttstck",
-                        "item_id": 233,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Fal_OeBttstck",
-                        "item_id": 234,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Fal_FoldingBttstck",
-                        "item_id": 235,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Saiga_Bttstck",
-                        "item_id": 236,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -1320,39 +753,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "M249_Hndgrd",
-                        "item_id": 258,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "M249_RisHndgrd",
-                        "item_id": 259,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AtlasBipod",
-                        "item_id": 260,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "M249_Bipod",
-                        "item_id": 261,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                    },                    
                     {
                         "_comment": "GhillieAtt_Tan",
                         "item_id": 262,
@@ -1376,22 +777,6 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Groza_LowerReceiver",
-                        "item_id": 265,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "GrozaGL_LowerReceiver",
-                        "item_id": 266,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
                     }
                 ]
             },
@@ -1402,86 +787,6 @@
                     {
                         "_comment": "LandMineTrap",
                         "item_id": 267,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "RGD5Grenade",
-                        "item_id": 268,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "M67Grenade",
-                        "item_id": 269,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "M18SmokeGrenade_Red",
-                        "item_id": 270,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "M18SmokeGrenade_Green",
-                        "item_id": 271,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "M18SmokeGrenade_Yellow",
-                        "item_id": 272,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "M18SmokeGrenade_Purple",
-                        "item_id": 273,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "M18SmokeGrenade_White",
-                        "item_id": 274,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "RDG2SmokeGrenade_Black",
-                        "item_id": 275,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "RDG2SmokeGrenade_White",
-                        "item_id": 276,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "FlashGrenade",
-                        "item_id": 277,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -1502,64 +807,16 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Mag_357Speedloader_6Rnd",
-                        "item_id": 279,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_DE_9rnd",
-                        "item_id": 280,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_1911_7Rnd",
-                        "item_id": 281,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Mag_CZ75_15Rnd",
                         "item_id": 282,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_Glock_15Rnd",
-                        "item_id": 283,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_P1_8Rnd",
-                        "item_id": 284,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                    },                   
                     {
                         "_comment": "Mag_IJ70_8Rnd",
                         "item_id": 285,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_MP5_15Rnd",
-                        "item_id": 286,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -1574,85 +831,13 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Mag_PM73_15Rnd",
-                        "item_id": 288,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_PM73_25Rnd",
-                        "item_id": 289,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Mag_CZ61_20Rnd",
                         "item_id": 290,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_MKII_10Rnd",
-                        "item_id": 291,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_ShockCartridge",
-                        "item_id": 292,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_Ruger1022_10Rnd",
-                        "item_id": 293,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_Ruger1022_30Rnd",
-                        "item_id": 294,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CLIP762x54_5Rnd",
-                        "item_id": 295,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_762x54Snaploader_2Rnd",
-                        "item_id": 296,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_308WinSnaploader_2Rnd",
-                        "item_id": 297,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                    },               
                     {
                         "_comment": "Mag_CLIP762x39_10Rnd",
                         "item_id": 298,
@@ -1660,15 +845,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CLIP9x19_10Rnd",
-                        "item_id": 299,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                    },                    
                     {
                         "_comment": "Mag_AKM_30Rnd",
                         "item_id": 300,
@@ -1676,55 +853,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AKM_Drum75Rnd",
-                        "item_id": 301,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AKM_Drum75Rnd_Black",
-                        "item_id": 302,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AKM_Drum75Rnd_Green",
-                        "item_id": 303,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AKM_Palm30Rnd",
-                        "item_id": 304,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AKM_Palm30Rnd_Black",
-                        "item_id": 305,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AKM_Palm30Rnd_Green",
-                        "item_id": 306,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                    },                    
                     {
                         "_comment": "Mag_CZ527_5rnd",
                         "item_id": 307,
@@ -1740,183 +869,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_STANAGCoupled_30Rnd",
-                        "item_id": 309,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_10Rnd",
-                        "item_id": 310,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_10Rnd_Black",
-                        "item_id": 311,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_10Rnd_Green",
-                        "item_id": 312,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_20Rnd",
-                        "item_id": 313,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_20Rnd_Black",
-                        "item_id": 314,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_20Rnd_Green",
-                        "item_id": 315,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_30Rnd",
-                        "item_id": 316,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_30Rnd_Black",
-                        "item_id": 317,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_30Rnd_Green",
-                        "item_id": 318,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_40Rnd",
-                        "item_id": 319,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_40Rnd_Black",
-                        "item_id": 320,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_CMAG_40Rnd_Green",
-                        "item_id": 321,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AK101_30Rnd",
-                        "item_id": 322,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AK101_30Rnd_Black",
-                        "item_id": 323,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AK101_30Rnd_Green",
-                        "item_id": 324,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AK74_30Rnd",
-                        "item_id": 325,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AK74_30Rnd_Black",
-                        "item_id": 326,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_AK74_30Rnd_Green",
-                        "item_id": 327,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_SVD_10Rnd",
-                        "item_id": 328,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_FAL_20Rnd",
-                        "item_id": 329,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_Scout_5Rnd",
-                        "item_id": 330,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                    },                    
                     {
                         "_comment": "Mag_UMP_25Rnd",
                         "item_id": 331,
@@ -1924,95 +877,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_VSS_10Rnd",
-                        "item_id": 332,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_M249_Box200Rnd",
-                        "item_id": 333,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_12gaSnaploader_2Rnd",
-                        "item_id": 334,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_Saiga_5Rnd",
-                        "item_id": 335,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_Saiga_8Rnd",
-                        "item_id": 336,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_Saiga_Drum20Rnd",
-                        "item_id": 337,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_Arrows_Quiver",
-                        "item_id": 338,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_Bolts_Quiver",
-                        "item_id": 339,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_Dartgun_CO2",
-                        "item_id": 340,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_Groza_20Rnd",
-                        "item_id": 341,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mag_MakarovPB_8Rnd",
-                        "item_id": 342,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    }
+                    }                    
                 ]
             },
             {
@@ -2022,14 +887,6 @@
                     {
                         "_comment": "AmmoBox_556x45_20Rnd",
                         "item_id": 343,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AmmoBox_308Win_20Rnd",
-                        "item_id": 344,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -2050,23 +907,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AmmoBox_22_50Rnd",
-                        "item_id": 347,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AmmoBox_357_20Rnd",
-                        "item_id": 348,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                    },                    
                     {
                         "_comment": "AmmoBox_45ACP_25rnd",
                         "item_id": 349,
@@ -2098,22 +939,6 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AmmoBox_545x39_20Rnd",
-                        "item_id": 353,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AmmoBox_9x39_20Rnd",
-                        "item_id": 354,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
                     }
                 ]
             },
@@ -2124,14 +949,6 @@
                     {
                         "_comment": "Ammo_45ACP",
                         "item_id": 355,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_308Win",
-                        "item_id": 356,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -2186,22 +1003,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Ammo_9x39",
-                        "item_id": 363,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_22",
-                        "item_id": 364,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Ammo_12gaPellets",
                         "item_id": 365,
                         "quantity": 100,
@@ -2212,110 +1013,6 @@
                     {
                         "_comment": "Ammo_12gaSlug",
                         "item_id": 366,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_357",
-                        "item_id": 367,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_545x39",
-                        "item_id": 368,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_ArrowComposite",
-                        "item_id": 369,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_SharpStick",
-                        "item_id": 370,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_ArrowPrimitive",
-                        "item_id": 371,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_ArrowBoned",
-                        "item_id": 372,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_ArrowBolt",
-                        "item_id": 373,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_DartSyringe",
-                        "item_id": 374,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_Flare",
-                        "item_id": 375,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_RPG7_HE",
-                        "item_id": 376,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_RPG7_AP",
-                        "item_id": 377,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_LAW_HE",
-                        "item_id": 378,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Ammo_GrenadeM4",
-                        "item_id": 379,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -2342,84 +1039,52 @@
                 "hidden": 0,
                 "items": [
                     {
-                        "_comment": "TruckBattery",
-                        "item_id": 381,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "CarBattery",
                         "item_id": 382,
-                        "quantity": 100,
+                        "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "AircraftBattery",
-                        "item_id": 383,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "TruckExhaust",
-                        "item_id": 384,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "EngineBelt",
-                        "item_id": 385,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
+                        "restock_quantity": 0
                     },
                     {
                         "_comment": "BrakeFluid",
                         "item_id": 386,
-                        "quantity": 100,
+                        "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
-                        "restock_quantity": 100
+                        "restock_quantity": 0
                     },
                     {
                         "_comment": "EngineOil",
                         "item_id": 387,
-                        "quantity": 100,
+                        "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
-                        "restock_quantity": 100
+                        "restock_quantity": 0
                     },
                     {
                         "_comment": "CarRadiator",
                         "item_id": 388,
-                        "quantity": 100,
+                        "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
-                        "restock_quantity": 100
+                        "restock_quantity": 0
                     },
                     {
                         "_comment": "TruckRadiator",
                         "item_id": 389,
-                        "quantity": 100,
+                        "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
-                        "restock_quantity": 100
+                        "restock_quantity": 0
                     },
                     {
                         "_comment": "TireRepairKit",
                         "item_id": 390,
-                        "quantity": 100,
+                        "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
-                        "restock_quantity": 100
+                        "restock_quantity": 0
                     },
                     {
                         "_comment": "HeadlightH7",
@@ -2432,42 +1097,26 @@
                     {
                         "_comment": "HeadlightH7_Box",
                         "item_id": 392,
-                        "quantity": 100,
+                        "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "WindscreenBox",
-                        "item_id": 393,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
+                        "restock_quantity": 0
                     },
                     {
                         "_comment": "CanisterGasoline",
                         "item_id": 394,
-                        "quantity": 100,
+                        "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "GlowPlug",
-                        "item_id": 395,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
+                        "restock_quantity": 0
                     },
                     {
                         "_comment": "SparkPlug",
                         "item_id": 396,
-                        "quantity": 100,
+                        "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
-                        "restock_quantity": 100
+                        "restock_quantity": 0
                     }
                 ]
             },
@@ -2776,16 +1425,7 @@
             {
                 "name": "Belts",
                 "hidden": 0,
-                "items": [
-                    {
-                        "_comment": "LeatherBelt_Beige",
-                        "item_id": 434,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    }
-                ]
+                "items": []
             },
             {
                 "name": "Gloves",
@@ -2842,14 +1482,6 @@
                     {
                         "_comment": "TacticalGloves_Green",
                         "item_id": 441,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "NBCGlovesGray",
-                        "item_id": 442,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -3024,14 +1656,6 @@
                     {
                         "_comment": "ConstructionHelmet_Yellow",
                         "item_id": 463,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "BurlapSackCover",
-                        "item_id": 464,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -6024,14 +4648,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "MessTin",
-                        "item_id": 833,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Pliers",
                         "item_id": 834,
                         "quantity": 100,
@@ -6088,24 +4704,8 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Cassette",
-                        "item_id": 841,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Shovel",
                         "item_id": 842,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "FieldShovel",
-                        "item_id": 843,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -6120,24 +4720,8 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "FireExtinguisher",
-                        "item_id": 845,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Hammer",
                         "item_id": 846,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "MeatTenderizer",
-                        "item_id": 847,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -6176,14 +4760,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Sickle",
-                        "item_id": 852,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Hacksaw",
                         "item_id": 853,
                         "quantity": 100,
@@ -6208,61 +4784,13 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "HayHook",
-                        "item_id": 856,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "StoneKnife",
                         "item_id": 857,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Mace",
-                        "item_id": 858,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "FarmingHoe",
-                        "item_id": 859,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "ImprovisedFishingRod",
-                        "item_id": 860,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "ObsoleteFishingRod",
-                        "item_id": 861,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "FishingRod",
-                        "item_id": 862,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                    },                    
                     {
                         "_comment": "SledgeHammer",
                         "item_id": 863,
@@ -6270,31 +4798,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Iceaxe",
-                        "item_id": 864,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Broom",
-                        "item_id": 865,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Paddle",
-                        "item_id": 866,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    }
+                    }                    
                 ]
             },
             {
@@ -6342,14 +4846,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Cleaver",
-                        "item_id": 872,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "CombatKnife",
                         "item_id": 873,
                         "quantity": 100,
@@ -6374,24 +4870,8 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Pitchfork",
-                        "item_id": 876,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Pickaxe",
                         "item_id": 877,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Sword",
-                        "item_id": 878,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -6420,14 +4900,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "PipeWrench",
-                        "item_id": 881,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "BrassKnuckles_Dull",
                         "item_id": 882,
                         "quantity": 100,
@@ -6442,38 +4914,6 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "TelescopicBaton",
-                        "item_id": 884,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "HockeyStick",
-                        "item_id": 885,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "NewHockeyStick",
-                        "item_id": 886,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "PoliceBaton",
-                        "item_id": 887,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
                     }
                 ]
             },
@@ -6481,14 +4921,6 @@
                 "name": "Powered Melee",
                 "hidden": 0,
                 "items": [
-                    {
-                        "_comment": "Chainsaw",
-                        "item_id": 888,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
                     {
                         "_comment": "CattleProd",
                         "item_id": 889,
@@ -6510,32 +4942,7 @@
             {
                 "name": "Non-Lethal Melee",
                 "hidden": 0,
-                "items": [
-                    {
-                        "_comment": "DartGun",
-                        "item_id": 891,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Shockpistol",
-                        "item_id": 892,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Shockpistol_Black",
-                        "item_id": 893,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    }
-                ]
+                "items": []
             },
             {
                 "name": "Containers",
@@ -6668,14 +5075,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "FryingPan",
-                        "item_id": 909,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "PortableGasStove",
                         "item_id": 910,
                         "quantity": 100,
@@ -6686,22 +5085,6 @@
                     {
                         "_comment": "PortableGasLamp",
                         "item_id": 911,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Candle",
-                        "item_id": 912,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "PetrolLighter",
-                        "item_id": 913,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -6756,14 +5139,6 @@
                     {
                         "_comment": "Torch",
                         "item_id": 919,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "ChickenFeather",
-                        "item_id": 920,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -6840,14 +5215,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "CannabisSeeds",
-                        "item_id": 929,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "TomatoSeedsPack",
                         "item_id": 930,
                         "quantity": 100,
@@ -6880,14 +5247,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "CannabisSeedsPack",
-                        "item_id": 934,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "AntiPestsSpray",
                         "item_id": 935,
                         "quantity": 100,
@@ -6912,14 +5271,6 @@
                     {
                         "_comment": "WaterBottle",
                         "item_id": 937,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Vodka",
-                        "item_id": 938,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -7116,14 +5467,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Cannabis",
-                        "item_id": 962,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Plum",
                         "item_id": 963,
                         "quantity": 100,
@@ -7150,14 +5493,6 @@
                     {
                         "_comment": "GoatSteakMeat",
                         "item_id": 966,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "MouflonSteakMeat",
-                        "item_id": 967,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -7196,14 +5531,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "BearSteakMeat",
-                        "item_id": 972,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "CowSteakMeat",
                         "item_id": 973,
                         "quantity": 100,
@@ -7220,24 +5547,8 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "FoxSteakMeat",
-                        "item_id": 975,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "ChickenBreastMeat",
                         "item_id": 976,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "RabbitLegMeat",
-                        "item_id": 977,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -7352,56 +5663,7 @@
             {
                 "name": "Traps",
                 "hidden": 0,
-                "items": [
-                    {
-                        "_comment": "BearTrap",
-                        "item_id": 991,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "LandMineTrap",
-                        "item_id": 992,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "SmallFishTrap",
-                        "item_id": 993,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "FishNetTrap",
-                        "item_id": 994,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "TripwireTrap",
-                        "item_id": 995,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "RabbitSnareTrap",
-                        "item_id": 996,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    }
-                ]
+                "items": []
             },
             {
                 "name": "Navigation",
@@ -7518,22 +5780,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Syringe",
-                        "item_id": 1010,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "InjectionVial",
-                        "item_id": 1011,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "SalineBag",
                         "item_id": 1012,
                         "quantity": 100,
@@ -7582,48 +5828,8 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "Splint",
-                        "item_id": 1018,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Thermometer",
                         "item_id": 1019,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Defibrillator",
-                        "item_id": 1020,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "CigarettePack_Chernamorka",
-                        "item_id": 1021,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "CigarettePack_Merkur",
-                        "item_id": 1022,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "CigarettePack_Partyzanka",
-                        "item_id": 1023,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -7672,14 +5878,6 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Radio",
-                        "item_id": 1028,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
                     }
                 ]
             },
@@ -7696,11 +5894,19 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "",
+                        "_comment": "M4A1_Green Bundle Plus",
                         "item_id": 1030,
                         "quantity": 100,
-                        "can_sell": 0,
-                        "can_buy": 0,
+                        "can_sell": 1,
+                        "can_buy": 1,
+                        "restock_quantity": 100
+                    },
+                    {
+                        "_comment": "Flashlight Bundle",
+                        "item_id": 1084,
+                        "quantity": 100,
+                        "can_sell": 1,
+                        "can_buy": 1,
                         "restock_quantity": 100
                     }
                 ]
@@ -7838,30 +6044,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "ButaneCanister",
-                        "item_id": 1047,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Spraycan_Black",
-                        "item_id": 1048,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Spraycan_Green",
-                        "item_id": 1049,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "Matchbox",
                         "item_id": 1050,
                         "quantity": 100,
@@ -7934,14 +6116,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "RabbitPelt",
-                        "item_id": 1059,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "CowPelt",
                         "item_id": 1060,
                         "quantity": 100,
@@ -7974,14 +6148,6 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "BearPelt",
-                        "item_id": 1064,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "WolfPelt",
                         "item_id": 1065,
                         "quantity": 100,
@@ -7998,45 +6164,13 @@
                         "restock_quantity": 100
                     },
                     {
-                        "_comment": "MouflonPelt",
-                        "item_id": 1067,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "FoxPelt",
-                        "item_id": 1068,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
                         "_comment": "TannedLeather",
                         "item_id": 1069,
                         "quantity": 100,
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Hook",
-                        "item_id": 1070,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "BoneHook",
-                        "item_id": 1071,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                    },                   
                     {
                         "_comment": "Bark_Oak",
                         "item_id": 1072,
@@ -8068,23 +6202,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "Bait",
-                        "item_id": 1076,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
-                    {
-                        "_comment": "BoneBait",
-                        "item_id": 1077,
-                        "quantity": 100,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 100
-                    },
+                    },                   
                     {
                         "_comment": "GardenLime",
                         "item_id": 1078,
@@ -8154,7 +6272,9 @@
         "name": "User Driven Store",
         "type": "default",
         "log_transactions": 1,
+        "save_every_minutes": 5,
         "restock_every_minutes": 0,
+        "show_out_of_stock": 1,
         "allowed_conditions": [
             0,
             1
@@ -8165,64 +6285,8 @@
                 "hidden": 0,
                 "items": [
                     {
-                        "_comment": "Colt1911",
-                        "item_id": 100,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Engraved1911",
-                        "item_id": 101,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "CZ75",
                         "item_id": 102,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "DE",
-                        "item_id": 103,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Derringer_Black",
-                        "item_id": 104,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Derringer_Pink",
-                        "item_id": 105,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Derringer_Grey",
-                        "item_id": 106,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Flaregun",
-                        "item_id": 107,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -8237,64 +6301,8 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Glock19",
-                        "item_id": 109,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "LongHorn",
-                        "item_id": 110,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Magnum",
-                        "item_id": 111,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "MKII",
-                        "item_id": 112,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "P1",
-                        "item_id": 113,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "MakarovPB",
-                        "item_id": 114,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "MakarovIJ70",
                         "item_id": 115,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Red9",
-                        "item_id": 116,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -8306,40 +6314,8 @@
                 "name": "Shotguns",
                 "items": [
                     {
-                        "_comment": "Izh43Shotgun",
-                        "item_id": 117,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "SawedoffIzh43Shotgun",
-                        "item_id": 118,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Mp133Shotgun",
                         "item_id": 119,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mp133Shotgun_PistolGrip",
-                        "item_id": 120,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Saiga12KShotgun",
-                        "item_id": 121,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -8353,14 +6329,6 @@
                     {
                         "_comment": "MP5K",
                         "item_id": 122,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "PM73Rak",
-                        "item_id": 123,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -8452,30 +6420,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Scout",
-                        "item_id": 134,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Scout_Black",
-                        "item_id": 135,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Scout_Green",
-                        "item_id": 136,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "SKS",
                         "item_id": 137,
                         "quantity": 0,
@@ -8502,78 +6446,6 @@
                     {
                         "_comment": "SVD",
                         "item_id": 140,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Winchester70",
-                        "item_id": 141,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Winchester70_Black",
-                        "item_id": 142,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Winchester70_Green",
-                        "item_id": 143,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "VSS",
-                        "item_id": 144,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ruger1022",
-                        "item_id": 145,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ruger1022_Black",
-                        "item_id": 146,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ruger1022_Green",
-                        "item_id": 147,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Trumpet",
-                        "item_id": 148,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Repeater",
-                        "item_id": 149,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -8626,127 +6498,15 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "B95",
-                        "item_id": 156,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "B95_Black",
-                        "item_id": 157,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "B95_Green",
-                        "item_id": 158,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
                     }
                 ]
             },
             {
                 "name": "Assault Rifles",
-                "items": [
-                    {
-                        "_comment": "AK74",
-                        "item_id": 159,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AK74_Black",
-                        "item_id": 160,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AK74_Green",
-                        "item_id": 161,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AKS74U",
-                        "item_id": 162,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AKS74U_Black",
-                        "item_id": 163,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AKS74U_Green",
-                        "item_id": 164,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AK101",
-                        "item_id": 165,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AK101_Black",
-                        "item_id": 166,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AK101_Green",
-                        "item_id": 167,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                "items": [                    
                     {
                         "_comment": "AKM",
                         "item_id": 168,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AugSteyr",
-                        "item_id": 169,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "FAL",
-                        "item_id": 170,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -8775,29 +6535,12 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Groza",
-                        "item_id": 174,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
                     }
                 ]
             },
             {
                 "name": "Machine Guns",
-                "items": [
-                    {
-                        "_comment": "M249",
-                        "item_id": 175,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    }
-                ]
+                "items": []
             },
             {
                 "name": "Weapon Muzzles",
@@ -8830,14 +6573,6 @@
                     {
                         "_comment": "SKS_Bayonet",
                         "item_id": 179,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mosin_Compensator",
-                        "item_id": 180,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -8882,47 +6617,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Groza_Barrel_Short",
-                        "item_id": 186,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Groza_Barrel_Grip",
-                        "item_id": 187,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Groza_Barrel_Suppressor",
-                        "item_id": 188,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "MakarovPBSuppressor",
-                        "item_id": 189,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Aug_Barrel",
-                        "item_id": 190,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    }
+                    }                    
                 ]
             },
             {
@@ -8936,55 +6631,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "BUISOptic",
-                        "item_id": 192,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "M68Optic",
-                        "item_id": 193,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "M4_T3NRDSOptic",
-                        "item_id": 194,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "FNP45_MRDSOptic",
-                        "item_id": 195,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Crossbow_RedpointOptic",
-                        "item_id": 196,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "ReflexOptic",
-                        "item_id": 197,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                    },                    
                     {
                         "_comment": "ACOGOptic",
                         "item_id": 198,
@@ -9002,22 +6649,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "KashtanOptic",
-                        "item_id": 200,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "LongrangeOptic",
-                        "item_id": 201,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "HuntingOptic",
                         "item_id": 202,
                         "quantity": 0,
@@ -9026,32 +6657,8 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "PistolOptic",
-                        "item_id": 203,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "PSO1Optic",
                         "item_id": 204,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "PSO11Optic",
-                        "item_id": 205,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "GrozaOptic",
-                        "item_id": 206,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -9240,64 +6847,8 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "AKS74U_Bttstck",
-                        "item_id": 229,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AKS74U_Bttstck_Black",
-                        "item_id": 230,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AKS74U_Bttstck_Green",
-                        "item_id": 231,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "MP5k_StockBttstck",
                         "item_id": 232,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Red9Bttstck",
-                        "item_id": 233,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Fal_OeBttstck",
-                        "item_id": 234,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Fal_FoldingBttstck",
-                        "item_id": 235,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Saiga_Bttstck",
-                        "item_id": 236,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -9470,39 +7021,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "M249_Hndgrd",
-                        "item_id": 258,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "M249_RisHndgrd",
-                        "item_id": 259,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AtlasBipod",
-                        "item_id": 260,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "M249_Bipod",
-                        "item_id": 261,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                    },                    
                     {
                         "_comment": "GhillieAtt_Tan",
                         "item_id": 262,
@@ -9526,22 +7045,6 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Groza_LowerReceiver",
-                        "item_id": 265,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "GrozaGL_LowerReceiver",
-                        "item_id": 266,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
                     }
                 ]
             },
@@ -9552,86 +7055,6 @@
                     {
                         "_comment": "LandMineTrap",
                         "item_id": 267,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "RGD5Grenade",
-                        "item_id": 268,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "M67Grenade",
-                        "item_id": 269,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "M18SmokeGrenade_Red",
-                        "item_id": 270,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "M18SmokeGrenade_Green",
-                        "item_id": 271,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "M18SmokeGrenade_Yellow",
-                        "item_id": 272,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "M18SmokeGrenade_Purple",
-                        "item_id": 273,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "M18SmokeGrenade_White",
-                        "item_id": 274,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "RDG2SmokeGrenade_Black",
-                        "item_id": 275,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "RDG2SmokeGrenade_White",
-                        "item_id": 276,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "FlashGrenade",
-                        "item_id": 277,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -9652,64 +7075,16 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Mag_357Speedloader_6Rnd",
-                        "item_id": 279,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_DE_9rnd",
-                        "item_id": 280,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_1911_7Rnd",
-                        "item_id": 281,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Mag_CZ75_15Rnd",
                         "item_id": 282,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_Glock_15Rnd",
-                        "item_id": 283,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_P1_8Rnd",
-                        "item_id": 284,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                    },                   
                     {
                         "_comment": "Mag_IJ70_8Rnd",
                         "item_id": 285,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_MP5_15Rnd",
-                        "item_id": 286,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -9724,85 +7099,13 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Mag_PM73_15Rnd",
-                        "item_id": 288,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_PM73_25Rnd",
-                        "item_id": 289,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Mag_CZ61_20Rnd",
                         "item_id": 290,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_MKII_10Rnd",
-                        "item_id": 291,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_ShockCartridge",
-                        "item_id": 292,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_Ruger1022_10Rnd",
-                        "item_id": 293,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_Ruger1022_30Rnd",
-                        "item_id": 294,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CLIP762x54_5Rnd",
-                        "item_id": 295,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_762x54Snaploader_2Rnd",
-                        "item_id": 296,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_308WinSnaploader_2Rnd",
-                        "item_id": 297,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                    },               
                     {
                         "_comment": "Mag_CLIP762x39_10Rnd",
                         "item_id": 298,
@@ -9810,15 +7113,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CLIP9x19_10Rnd",
-                        "item_id": 299,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                    },                    
                     {
                         "_comment": "Mag_AKM_30Rnd",
                         "item_id": 300,
@@ -9826,55 +7121,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AKM_Drum75Rnd",
-                        "item_id": 301,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AKM_Drum75Rnd_Black",
-                        "item_id": 302,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AKM_Drum75Rnd_Green",
-                        "item_id": 303,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AKM_Palm30Rnd",
-                        "item_id": 304,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AKM_Palm30Rnd_Black",
-                        "item_id": 305,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AKM_Palm30Rnd_Green",
-                        "item_id": 306,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                    },                    
                     {
                         "_comment": "Mag_CZ527_5rnd",
                         "item_id": 307,
@@ -9890,183 +7137,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_STANAGCoupled_30Rnd",
-                        "item_id": 309,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_10Rnd",
-                        "item_id": 310,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_10Rnd_Black",
-                        "item_id": 311,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_10Rnd_Green",
-                        "item_id": 312,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_20Rnd",
-                        "item_id": 313,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_20Rnd_Black",
-                        "item_id": 314,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_20Rnd_Green",
-                        "item_id": 315,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_30Rnd",
-                        "item_id": 316,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_30Rnd_Black",
-                        "item_id": 317,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_30Rnd_Green",
-                        "item_id": 318,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_40Rnd",
-                        "item_id": 319,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_40Rnd_Black",
-                        "item_id": 320,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_CMAG_40Rnd_Green",
-                        "item_id": 321,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AK101_30Rnd",
-                        "item_id": 322,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AK101_30Rnd_Black",
-                        "item_id": 323,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AK101_30Rnd_Green",
-                        "item_id": 324,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AK74_30Rnd",
-                        "item_id": 325,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AK74_30Rnd_Black",
-                        "item_id": 326,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_AK74_30Rnd_Green",
-                        "item_id": 327,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_SVD_10Rnd",
-                        "item_id": 328,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_FAL_20Rnd",
-                        "item_id": 329,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_Scout_5Rnd",
-                        "item_id": 330,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                    },                    
                     {
                         "_comment": "Mag_UMP_25Rnd",
                         "item_id": 331,
@@ -10074,95 +7145,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_VSS_10Rnd",
-                        "item_id": 332,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_M249_Box200Rnd",
-                        "item_id": 333,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_12gaSnaploader_2Rnd",
-                        "item_id": 334,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_Saiga_5Rnd",
-                        "item_id": 335,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_Saiga_8Rnd",
-                        "item_id": 336,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_Saiga_Drum20Rnd",
-                        "item_id": 337,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_Arrows_Quiver",
-                        "item_id": 338,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_Bolts_Quiver",
-                        "item_id": 339,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_Dartgun_CO2",
-                        "item_id": 340,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_Groza_20Rnd",
-                        "item_id": 341,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mag_MakarovPB_8Rnd",
-                        "item_id": 342,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    }
+                    }                    
                 ]
             },
             {
@@ -10172,14 +7155,6 @@
                     {
                         "_comment": "AmmoBox_556x45_20Rnd",
                         "item_id": 343,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AmmoBox_308Win_20Rnd",
-                        "item_id": 344,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -10200,23 +7175,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AmmoBox_22_50Rnd",
-                        "item_id": 347,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AmmoBox_357_20Rnd",
-                        "item_id": 348,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                    },                    
                     {
                         "_comment": "AmmoBox_45ACP_25rnd",
                         "item_id": 349,
@@ -10248,22 +7207,6 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AmmoBox_545x39_20Rnd",
-                        "item_id": 353,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AmmoBox_9x39_20Rnd",
-                        "item_id": 354,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
                     }
                 ]
             },
@@ -10274,14 +7217,6 @@
                     {
                         "_comment": "Ammo_45ACP",
                         "item_id": 355,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_308Win",
-                        "item_id": 356,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -10336,22 +7271,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Ammo_9x39",
-                        "item_id": 363,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_22",
-                        "item_id": 364,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Ammo_12gaPellets",
                         "item_id": 365,
                         "quantity": 0,
@@ -10366,124 +7285,6 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_357",
-                        "item_id": 367,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_545x39",
-                        "item_id": 368,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_ArrowComposite",
-                        "item_id": 369,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_SharpStick",
-                        "item_id": 370,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_ArrowPrimitive",
-                        "item_id": 371,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_ArrowBoned",
-                        "item_id": 372,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_ArrowBolt",
-                        "item_id": 373,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_DartSyringe",
-                        "item_id": 374,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_Flare",
-                        "item_id": 375,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_RPG7_HE",
-                        "item_id": 376,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_RPG7_AP",
-                        "item_id": 377,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_LAW_HE",
-                        "item_id": 378,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Ammo_GrenadeM4",
-                        "item_id": 379,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    }
-                ]
-            },
-            {
-                "name": "Vehicles",
-                "hidden": 0,
-                "items": [
-                    {
-                        "_comment": "OffroadHatchback",
-                        "item_id": 380,
-                        "quantity": 0,
-                        "can_sell": 0,
-                        "can_buy": 0,
-                        "restock_quantity": 0
                     }
                 ]
             },
@@ -10492,40 +7293,8 @@
                 "hidden": 0,
                 "items": [
                     {
-                        "_comment": "TruckBattery",
-                        "item_id": 381,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "CarBattery",
                         "item_id": 382,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "AircraftBattery",
-                        "item_id": 383,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "TruckExhaust",
-                        "item_id": 384,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "EngineBelt",
-                        "item_id": 385,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -10588,24 +7357,8 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "WindscreenBox",
-                        "item_id": 393,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "CanisterGasoline",
                         "item_id": 394,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "GlowPlug",
-                        "item_id": 395,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -10926,16 +7679,7 @@
             {
                 "name": "Belts",
                 "hidden": 0,
-                "items": [
-                    {
-                        "_comment": "LeatherBelt_Beige",
-                        "item_id": 434,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    }
-                ]
+                "items": []
             },
             {
                 "name": "Gloves",
@@ -10992,14 +7736,6 @@
                     {
                         "_comment": "TacticalGloves_Green",
                         "item_id": 441,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "NBCGlovesGray",
-                        "item_id": 442,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -11174,14 +7910,6 @@
                     {
                         "_comment": "ConstructionHelmet_Yellow",
                         "item_id": 463,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "BurlapSackCover",
-                        "item_id": 464,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -14174,14 +10902,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "MessTin",
-                        "item_id": 833,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Pliers",
                         "item_id": 834,
                         "quantity": 0,
@@ -14238,24 +10958,8 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Cassette",
-                        "item_id": 841,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Shovel",
                         "item_id": 842,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "FieldShovel",
-                        "item_id": 843,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -14270,24 +10974,8 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "FireExtinguisher",
-                        "item_id": 845,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Hammer",
                         "item_id": 846,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "MeatTenderizer",
-                        "item_id": 847,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -14326,14 +11014,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Sickle",
-                        "item_id": 852,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Hacksaw",
                         "item_id": 853,
                         "quantity": 0,
@@ -14358,61 +11038,13 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "HayHook",
-                        "item_id": 856,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "StoneKnife",
                         "item_id": 857,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Mace",
-                        "item_id": 858,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "FarmingHoe",
-                        "item_id": 859,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "ImprovisedFishingRod",
-                        "item_id": 860,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "ObsoleteFishingRod",
-                        "item_id": 861,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "FishingRod",
-                        "item_id": 862,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                    },                    
                     {
                         "_comment": "SledgeHammer",
                         "item_id": 863,
@@ -14420,31 +11052,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Iceaxe",
-                        "item_id": 864,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Broom",
-                        "item_id": 865,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Paddle",
-                        "item_id": 866,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    }
+                    }                    
                 ]
             },
             {
@@ -14492,14 +11100,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Cleaver",
-                        "item_id": 872,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "CombatKnife",
                         "item_id": 873,
                         "quantity": 0,
@@ -14524,24 +11124,8 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Pitchfork",
-                        "item_id": 876,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Pickaxe",
                         "item_id": 877,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Sword",
-                        "item_id": 878,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -14570,14 +11154,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "PipeWrench",
-                        "item_id": 881,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "BrassKnuckles_Dull",
                         "item_id": 882,
                         "quantity": 0,
@@ -14592,38 +11168,6 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "TelescopicBaton",
-                        "item_id": 884,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "HockeyStick",
-                        "item_id": 885,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "NewHockeyStick",
-                        "item_id": 886,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "PoliceBaton",
-                        "item_id": 887,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
                     }
                 ]
             },
@@ -14631,14 +11175,6 @@
                 "name": "Powered Melee",
                 "hidden": 0,
                 "items": [
-                    {
-                        "_comment": "Chainsaw",
-                        "item_id": 888,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
                     {
                         "_comment": "CattleProd",
                         "item_id": 889,
@@ -14660,32 +11196,7 @@
             {
                 "name": "Non-Lethal Melee",
                 "hidden": 0,
-                "items": [
-                    {
-                        "_comment": "DartGun",
-                        "item_id": 891,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Shockpistol",
-                        "item_id": 892,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Shockpistol_Black",
-                        "item_id": 893,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    }
-                ]
+                "items": []
             },
             {
                 "name": "Containers",
@@ -14818,14 +11329,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "FryingPan",
-                        "item_id": 909,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "PortableGasStove",
                         "item_id": 910,
                         "quantity": 0,
@@ -14836,22 +11339,6 @@
                     {
                         "_comment": "PortableGasLamp",
                         "item_id": 911,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Candle",
-                        "item_id": 912,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "PetrolLighter",
-                        "item_id": 913,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -14906,14 +11393,6 @@
                     {
                         "_comment": "Torch",
                         "item_id": 919,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "ChickenFeather",
-                        "item_id": 920,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -14990,14 +11469,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "CannabisSeeds",
-                        "item_id": 929,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "TomatoSeedsPack",
                         "item_id": 930,
                         "quantity": 0,
@@ -15030,14 +11501,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "CannabisSeedsPack",
-                        "item_id": 934,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "AntiPestsSpray",
                         "item_id": 935,
                         "quantity": 0,
@@ -15062,14 +11525,6 @@
                     {
                         "_comment": "WaterBottle",
                         "item_id": 937,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Vodka",
-                        "item_id": 938,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -15266,14 +11721,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Cannabis",
-                        "item_id": 962,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Plum",
                         "item_id": 963,
                         "quantity": 0,
@@ -15300,14 +11747,6 @@
                     {
                         "_comment": "GoatSteakMeat",
                         "item_id": 966,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "MouflonSteakMeat",
-                        "item_id": 967,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -15346,14 +11785,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "BearSteakMeat",
-                        "item_id": 972,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "CowSteakMeat",
                         "item_id": 973,
                         "quantity": 0,
@@ -15370,24 +11801,8 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "FoxSteakMeat",
-                        "item_id": 975,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "ChickenBreastMeat",
                         "item_id": 976,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "RabbitLegMeat",
-                        "item_id": 977,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -15502,56 +11917,7 @@
             {
                 "name": "Traps",
                 "hidden": 0,
-                "items": [
-                    {
-                        "_comment": "BearTrap",
-                        "item_id": 991,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "LandMineTrap",
-                        "item_id": 992,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "SmallFishTrap",
-                        "item_id": 993,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "FishNetTrap",
-                        "item_id": 994,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "TripwireTrap",
-                        "item_id": 995,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "RabbitSnareTrap",
-                        "item_id": 996,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    }
-                ]
+                "items": []
             },
             {
                 "name": "Navigation",
@@ -15668,22 +12034,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Syringe",
-                        "item_id": 1010,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "InjectionVial",
-                        "item_id": 1011,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "SalineBag",
                         "item_id": 1012,
                         "quantity": 0,
@@ -15732,48 +12082,8 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "Splint",
-                        "item_id": 1018,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Thermometer",
                         "item_id": 1019,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Defibrillator",
-                        "item_id": 1020,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "CigarettePack_Chernamorka",
-                        "item_id": 1021,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "CigarettePack_Merkur",
-                        "item_id": 1022,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "CigarettePack_Partyzanka",
-                        "item_id": 1023,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
@@ -15821,36 +12131,6 @@
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Radio",
-                        "item_id": 1028,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    }
-                ]
-            },
-            {
-                "name": "Bundled Items",
-                "hidden": 0,
-                "items": [
-                    {
-                        "_comment": "M4A1_Green",
-                        "item_id": 1029,
-                        "quantity": 0,
-                        "can_sell": 0,
-                        "can_buy": 0,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "",
-                        "item_id": 1030,
-                        "quantity": 0,
-                        "can_sell": 0,
-                        "can_buy": 0,
                         "restock_quantity": 0
                     }
                 ]
@@ -15988,30 +12268,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "ButaneCanister",
-                        "item_id": 1047,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Spraycan_Black",
-                        "item_id": 1048,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Spraycan_Green",
-                        "item_id": 1049,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "Matchbox",
                         "item_id": 1050,
                         "quantity": 0,
@@ -16084,14 +12340,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "RabbitPelt",
-                        "item_id": 1059,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "CowPelt",
                         "item_id": 1060,
                         "quantity": 0,
@@ -16124,14 +12372,6 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "BearPelt",
-                        "item_id": 1064,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "WolfPelt",
                         "item_id": 1065,
                         "quantity": 0,
@@ -16148,45 +12388,13 @@
                         "restock_quantity": 0
                     },
                     {
-                        "_comment": "MouflonPelt",
-                        "item_id": 1067,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "FoxPelt",
-                        "item_id": 1068,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
                         "_comment": "TannedLeather",
                         "item_id": 1069,
                         "quantity": 0,
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Hook",
-                        "item_id": 1070,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "BoneHook",
-                        "item_id": 1071,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                    },                   
                     {
                         "_comment": "Bark_Oak",
                         "item_id": 1072,
@@ -16218,23 +12426,7 @@
                         "can_sell": 1,
                         "can_buy": 1,
                         "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "Bait",
-                        "item_id": 1076,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
-                    {
-                        "_comment": "BoneBait",
-                        "item_id": 1077,
-                        "quantity": 0,
-                        "can_sell": 1,
-                        "can_buy": 1,
-                        "restock_quantity": 0
-                    },
+                    },                   
                     {
                         "_comment": "GardenLime",
                         "item_id": 1078,

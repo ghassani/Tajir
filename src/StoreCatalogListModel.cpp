@@ -450,6 +450,48 @@ bool StoreCatalogListModel::setData( const QModelIndex &index, const QVariant &v
     return updated;
 }
 
+void StoreCatalogListModel::removeCatalog( const QModelIndex& index )
+{
+    if ( !index.isValid() || !isCatalog( index ) )
+    {
+        return;
+    }
+
+    TajirStoreCatalogJson * catalog = getCatalog( index );
+
+    if ( catalog )
+    {
+        beginResetModel();
+
+        store->catalogs.removeOne( catalog );
+
+        endResetModel();
+
+        delete catalog;
+    }
+}
+
+void StoreCatalogListModel::removeItem( const QModelIndex& index )
+{
+    if ( !index.isValid() || isCatalog( index ) )
+    {
+        return;
+    }
+
+    TajirStoreCatalogItemJson * item = getItem( index );
+
+    if ( item )
+    {
+        beginResetModel();
+
+        item->catalog->items.removeOne( item );
+
+        endResetModel();
+
+        delete item;
+    }
+}
+
 bool StoreCatalogListModel::setHeaderData( int section, Qt::Orientation orientation, const QVariant &value, int role )
 {
     return false;

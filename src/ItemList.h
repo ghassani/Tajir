@@ -22,6 +22,8 @@ public:
 
     void deleteItem( const QModelIndex& index );
 
+    void deleteItems( const QModelIndexList& selected );
+
     TajirItemJson * getItemById( int id );
 
     const QList<TajirItemJson *>& getItems();

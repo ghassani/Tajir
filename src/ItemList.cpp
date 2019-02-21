@@ -11,7 +11,8 @@ ItemList::ItemList( QWidget * parent ) :
     model( new ItemListModel() )
 {
     setModel( model );
-
+    setSelectionMode(QAbstractItemView::SelectionMode::MultiSelection);
+    setSelectionBehavior(QAbstractItemView::SelectionBehavior::SelectRows);
 }
 
 void ItemList::loadJson( const QString& filepath )
@@ -60,10 +61,16 @@ void ItemList::loadJson( const QString& filepath )
 
 void ItemList::contextMenuEvent( QContextMenuEvent * event )
 {
-    QMenu * menu        = new QMenu( this );
-    QModelIndex index   = indexAt( event->pos() );
+    QMenu * menu         = new QMenu( this );
+    QModelIndex index    = indexAt( event->pos() );
+    QModelIndexList list = selectionModel()->selectedRows();
 
     menu->addAction( "Add Item", this, std::bind( &ItemList::addItem, this )  );
+
+    if ( list.count() > 1 )
+    {
+        menu->addAction( QString("Delete %1 Items").arg( list.count() ), this, std::bind( &ItemList::deleteItems, this, list )  );
+    }
 
     if( index.isValid() )
     {
@@ -89,6 +96,14 @@ void ItemList::addBundleItem( const QModelIndex& index )
 void ItemList::deleteItem( const QModelIndex& index )
 {
     model->removeItem( index );
+}
+
+void ItemList::deleteItems( const QModelIndexList& selected )
+{
+    foreach( const QModelIndex& index, selected )
+    {
+        model->removeItem( index );
+    }
 }
 
 TajirItemJson * ItemList::getItemById( int id )
