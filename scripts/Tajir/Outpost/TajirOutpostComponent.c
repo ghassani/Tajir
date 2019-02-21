@@ -15,6 +15,10 @@ class TajirOutpostComponent extends TajirComponentBase
 	protected ref array<ref TajirOutpostConfig> m_config;
 
 	protected ref array<ref TajirOutpost> 		m_outposts;
+
+	protected int m_updateEvery = 1000;
+
+	protected int m_updateLast = 0;
 	
 	/**
 	 * @brief      Constructor
@@ -284,16 +288,19 @@ class TajirOutpostComponent extends TajirComponentBase
 	{
 		if ( GetGame().IsServer() && GetGame().IsMultiplayer() )
 		{
-			ProcessOutposts( timeslice );
+			if ( GetGame().GetTime() >= ( m_updateLast + m_updateEvery ) )
+			{
+				ProcessOutposts();
+
+				m_updateLast = GetGame().GetTime();
+			}
 		}
 	}
 
 	/**
 	 * @brief      { function_description }
-	 *
-	 * @param[in]  timeslice  The timeslice
 	 */
-	void ProcessOutposts( float timeslice )
+	void ProcessOutposts( )
 	{
 		PlayerBase player;
 		array<string> threatTypes;
