@@ -15,28 +15,4 @@ class TajirOutpostObjectConfig
 	string name;
 	vector position;
 	vector orientation;
-	
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( name );
-		s.Write( position );
-		s.Write( orientation );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( name );
-		s.Read( position );
-		s.Read( orientation );
-	}
 }

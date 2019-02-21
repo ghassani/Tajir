@@ -22,26 +22,4 @@ class TajirConfigKeyBinding
 	{
 		keybinds = new array<string>;
 	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( name );
-		s.Write( keybinds );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( name );
-		s.Read( keybinds );
-	}
 }

@@ -29,32 +29,4 @@ class TajirStoreCatalogItemConfig
 		quantity			= -1;
 		restock_quantity	= -1;
 	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( item_id );
-		s.Write( can_sell );
-		s.Write( can_buy );
-		s.Write( quantity );
-		s.Write( restock_quantity );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( item_id );
-		s.Read( can_sell );
-		s.Read( can_buy );
-		s.Read( quantity );
-		s.Read( restock_quantity );
-	}
 }

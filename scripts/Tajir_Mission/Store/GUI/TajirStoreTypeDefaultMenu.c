@@ -30,7 +30,7 @@ enum TajirStoreTypeDefaultMenuTabSellColumns
  * @brief      Handles the store menu for the default store type.
  */
 class TajirStoreTypeDefaultMenu extends TajirStoreTypeMenuBase
-{
+{	
 	protected ButtonWidget 					m_buyToggle;
 
 	protected Widget 						m_buyPanel;
@@ -103,6 +103,41 @@ class TajirStoreTypeDefaultMenu extends TajirStoreTypeMenuBase
 			delete m_transaction;
 			m_transaction = NULL;
 		}
+		
+		if ( m_widget )
+		{
+			WidgetEventHandler.GetInstance().UnregisterWidget( m_widget );
+		}
+
+		if ( m_buyToggle )
+		{
+			WidgetEventHandler.GetInstance().UnregisterWidget( m_buyToggle );
+		}
+
+		if ( m_sellToggle )
+		{			
+			WidgetEventHandler.GetInstance().UnregisterWidget( m_sellToggle );
+		}
+
+		if ( m_buyActionButton )
+		{			
+			WidgetEventHandler.GetInstance().UnregisterWidget( m_buyActionButton );
+		}
+
+		if ( m_sellActionButton )
+		{			
+			WidgetEventHandler.GetInstance().UnregisterWidget( m_sellActionButton );
+		}
+
+		if ( m_searchButton )
+		{			
+			WidgetEventHandler.GetInstance().UnregisterWidget( m_searchButton );
+		}
+
+		if ( m_clearSearchButton )
+		{			
+			WidgetEventHandler.GetInstance().UnregisterWidget( m_clearSearchButton );
+		}
 	}
 
 	/**
@@ -136,6 +171,14 @@ class TajirStoreTypeDefaultMenu extends TajirStoreTypeMenuBase
 		m_clearSearchButton 		= ButtonWidget.Cast( w.FindAnyWidget( "ClearSearchButton" ) );
 		m_searchText 				= EditBoxWidget.Cast( w.FindAnyWidget( "SearchText" ) );
 		m_buyQuantity 				= EditBoxWidget.Cast( w.FindAnyWidget( "BuyQuantity" ) );
+	
+		WidgetEventHandler.GetInstance().RegisterOnUpdate( m_widget, 			this, "OnUpdate" );
+		WidgetEventHandler.GetInstance().RegisterOnClick( m_buyToggle,  		this, "ToggleBuyPanel" );
+		WidgetEventHandler.GetInstance().RegisterOnClick( m_sellToggle, 		this, "ToggleSellPanel" );
+		WidgetEventHandler.GetInstance().RegisterOnClick( m_buyActionButton, 	this, "ProcessBuyRequest" );
+		WidgetEventHandler.GetInstance().RegisterOnClick( m_sellActionButton, 	this, "ProcessSellRequest" );
+		WidgetEventHandler.GetInstance().RegisterOnClick( m_searchButton, 		this, "UpdateCurrentInventoryView" );
+		WidgetEventHandler.GetInstance().RegisterOnClick( m_clearSearchButton, 	this, "ClearSearchText" );
 
 		PopulateBuyCatalogSelection();
 		SetProcessingState( false );
@@ -516,6 +559,11 @@ class TajirStoreTypeDefaultMenu extends TajirStoreTypeMenuBase
 	 */
 	protected void ToggleBuyPanel()
 	{
+		if ( m_buyPanel.IsVisible() )
+		{
+			return;
+		}
+
 		m_sellInventory.ClearItems();
 		
 		ClearSellData();
@@ -544,6 +592,11 @@ class TajirStoreTypeDefaultMenu extends TajirStoreTypeMenuBase
 	 */
 	protected void ToggleSellPanel()
 	{
+		if ( m_sellPanel.IsVisible() )
+		{
+			return;
+		}
+
 		m_buyInventory.ClearItems();
 		ClearBuyData();
 
@@ -620,55 +673,13 @@ class TajirStoreTypeDefaultMenu extends TajirStoreTypeMenuBase
 		m_sellListData.Clear();
 	}
 
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  w       { parameter_description }
-	 * @param[in]  x       { parameter_description }
-	 * @param[in]  y       { parameter_description }
-	 * @param[in]  button  The button
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	override bool OnClick( Widget w, int x, int y, int button )
+	void ClearSearchText()
 	{
-		if ( w == m_buyToggle && !m_buyPanel.IsVisible() )
-		{
-			ToggleBuyPanel();
-			return true;
-		}
-		else if ( w == m_sellToggle && !m_sellPanel.IsVisible() )
-		{
-
-			ToggleSellPanel();
-			return true;
-		} 
-		else if ( w == m_buyActionButton )
-		{
-
-			ProcessBuyRequest();
-			return true;
-		}
-		else if ( w == m_sellActionButton )
-		{
-
-			ProcessSellRequest();
-			return true;
-		}
-		else if ( w == m_searchButton )
-		{
-
-			UpdateCurrentInventoryView();
-
-			return true;
-		}
-		else if ( w == m_clearSearchButton )
+		if ( m_searchText.GetText().Length() )
 		{
 			m_searchText.SetText( "" );
 			UpdateCurrentInventoryView();
 		}
-
-		return false;
 	}
 
 	/**
@@ -831,7 +842,7 @@ class TajirStoreTypeDefaultMenu extends TajirStoreTypeMenuBase
 			return;
 		}
 
-		int quantity 	= 1; // TODO: let user input this?
+		int quantity 	= 1; // TODO: maybe change this
 
 		m_transaction 	= new TajirStoreTransactionRequest();
 

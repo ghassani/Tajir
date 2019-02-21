@@ -58,34 +58,6 @@ class TajirDebugOutpostPlayerInfo
 
 		state = new TajirEntityHealthSaveState( EntityAI.Cast( player ) );
 	}
-
-	void Serialize( Serializer s )
-	{
-		s.Write( network_id_low );
-		s.Write( network_id_high );
-		s.Write( id );
-		s.Write( name );
-		s.Write( fullname );
-		s.Write( currency );
-		s.Write( position );
-		s.Write( merchant );
-		s.Write( inSafeZone );
-		s.Write( state );
-	}
-
-	void Deserialize( Serializer s )
-	{
-		s.Read( network_id_low );
-		s.Read( network_id_high );
-		s.Read( id );
-		s.Read( name );
-		s.Read( fullname );
-		s.Read( currency );
-		s.Read( position );
-		s.Read( merchant );
-		s.Read( inSafeZone );
-		s.Read( state );
-	}
 }
 
 class TajirDebugOutpostTransportInfo
@@ -126,30 +98,6 @@ class TajirDebugOutpostTransportInfo
 		
 		state = new TajirEntityHealthSaveState( EntityAI.Cast( transport ) );
 	}
-
-	void Serialize( Serializer s )
-	{
-		s.Write( network_id_low );
-		s.Write( network_id_high );
-		s.Write( type );
-		s.Write( position );
-		s.Write( state );
-		s.Write( inSafeZone );
-		s.Write( ownerUUID );
-		s.Write( allowedUUIDs );
-	}
-
-	void Deserialize( Serializer s )
-	{
-		s.Read( network_id_low );
-		s.Read( network_id_high );
-		s.Read( type );
-		s.Read( position );
-		s.Read( state );
-		s.Read( inSafeZone );
-		s.Read( ownerUUID );
-		s.Read( allowedUUIDs );
-	}
 }
 
 
@@ -187,21 +135,5 @@ class TajirDebugOutpostInfo
 				}
 			}
 		}
-	}
-
-	void Serialize( Serializer s )
-	{
-		s.Write( players );
-		s.Write( transports );
-		s.Write( safezone );
-		s.Write( id );
-	}
-
-	void Deserialize( Serializer s )
-	{
-		s.Read( players );
-		s.Read( transports );
-		s.Read( safezone );
-		s.Read( id );
 	}
 }

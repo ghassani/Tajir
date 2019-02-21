@@ -25,30 +25,4 @@ class TajirCurrencyConfig
 		objects = new array<string>;
 		player_start_currency = TAJIR_DEFAULT_PLAYER_START_CURRENCY;
 	}
-	
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( base_object );
-		s.Write( dynamic_object );
-		s.Write( player_start_currency );
-		s.Write( objects );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( base_object );
-		s.Read( dynamic_object );
-		s.Read( player_start_currency );
-		s.Read( objects );
-	}
 }

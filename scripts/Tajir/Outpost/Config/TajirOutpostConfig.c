@@ -28,34 +28,4 @@ class TajirOutpostConfig
 		safezone 	= new TajirOutpostSafeZoneConfig();
 		objects 	= new array<ref TajirOutpostObjectConfig>;
 	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( id );
-		s.Write( name );
-		s.Write( position );
-		s.Write( radius );
-		s.Write( safezone );
-		s.Write( objects );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( id );
-		s.Read( name );
-		s.Read( position );
-		s.Read( radius );
-		s.Read( safezone );
-		s.Read( objects );
-	}
 }

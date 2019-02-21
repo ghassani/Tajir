@@ -96,34 +96,6 @@ class TajirStoreMenu extends TajirStoreMenuBase
 	}
 
 	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  timeslice  The timeslice
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	override void Update(float timeslice)
-	{
-		if ( m_catalogMenuScript )
-		{
-			m_catalogMenuScript.OnUpdate(timeslice );
-		}
-	}
-
-	/**
-	 * @brief      GUI Input event handler
-	 */
-	override bool OnClick( Widget w, int x, int y, int button )
-	{
-		if ( m_catalogMenuScript )
-		{
-			return m_catalogMenuScript.OnClick( w, x, y, button );
-		}
-
-		return false;
-	}
-
-	/**
 	 * @brief      GUI event handler
 	 */
 	override bool OnChange( Widget w, int x, int y, bool finished )

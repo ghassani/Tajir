@@ -7,10 +7,10 @@
  * file that was distributed with this source code.
  */
 
-ref TajirManager g_TajirManager = NULL;
-
 class TajirManager
 {
+	private ref static TajirManager 				s_instance;
+
 	protected ref TajirConfig 						m_config;
 	
 	protected ref array<ref TajirComponentBase>		m_components;
@@ -36,18 +36,19 @@ class TajirManager
 	 */
 	void TajirManager()
 	{
+		if ( s_instance != NULL )
+		{
+			Error( "Tajir Manager Already Initialized" );
+			return;
+		}
+
 		m_config 		= new TajirConfig();
 		m_components	= new array<ref TajirComponentBase>;
 		m_isServer 		= GetGame().IsServer() && GetGame().IsMultiplayer();
 		m_isClient 		= GetGame().IsClient() && GetGame().IsMultiplayer();
 		m_isOffline 	= GetGame().IsServer() && !GetGame().IsMultiplayer();
 
-		if ( g_TajirManager != NULL )
-		{
-			Error2( ClassName(), "Tajir Manager Already Initialized" );
-		}
-
-		g_TajirManager = this;
+		s_instance = this;
 
 		GetGame().GetUpdateQueue( CALL_CATEGORY_SYSTEM ).Insert( this.OnSystemUpdate );
 		GetGame().GetUpdateQueue( CALL_CATEGORY_GUI ).Insert( this.OnGuiUpdate );
@@ -97,8 +98,6 @@ class TajirManager
 
 		m_components.Clear();
 
-		g_TajirManager = NULL;
-
 		if (  m_notifications != NULL )
 		{
 			delete m_notifications;
@@ -108,6 +107,8 @@ class TajirManager
 		{
 			delete m_keybinds;
 		}
+
+		s_instance = NULL;
 	}
 
 	/**
@@ -117,7 +118,7 @@ class TajirManager
 	 */
 	static TajirManager GetInstance()
 	{
-		return g_TajirManager;
+		return s_instance;
 	}
 
 	/**

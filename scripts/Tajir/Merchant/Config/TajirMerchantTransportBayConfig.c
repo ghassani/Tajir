@@ -15,18 +15,4 @@ class TajirMerchantTransportBayConfig
 	vector  position;
 	vector  orientation;
 	int 	radius;
-
-	void Serialize( Serializer s )
-	{
-		s.Write( position );
-		s.Write( orientation );
-		s.Write( radius );	
-	}
-
-	void Deserialize( Serializer s )
-	{
-		s.Read( position );
-		s.Read( orientation );
-		s.Read( radius );	
-	}
 }

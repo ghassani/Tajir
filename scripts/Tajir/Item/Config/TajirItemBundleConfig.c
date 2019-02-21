@@ -23,28 +23,4 @@ class TajirItemBundleConfig
 	{
 		items = new array<ref TajirItemBundleConfig>;
 	}
-	
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( object_name );
-		s.Write( quantity );
-		s.Write( items );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( object_name );
-		s.Read( quantity );
-		s.Read( items );
-	}
 }

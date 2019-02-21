@@ -564,44 +564,6 @@ class TajirEntityHealthSaveState
 	{
 		return m_entity;
 	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{		
-		s.Write( m_entity );
-		s.Write( m_types );
-		s.Write( m_zones );
-		s.Write( m_agents );
-		s.Write( m_fstats );
-		s.Write( m_fstatsmax );
-		s.Write( m_istats );
-		s.Write( m_istatsmax );
-		s.Write( m_isAlive );
-		s.Write( m_isDamageDestroyed );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( m_entity );
-		s.Read( m_types );
-		s.Read( m_zones );
-		s.Read( m_agents );
-		s.Read( m_fstats );
-		s.Read( m_fstatsmax );
-		s.Read( m_istats );
-		s.Read( m_istatsmax );
-		s.Read( m_isAlive );
-		s.Read( m_isDamageDestroyed );
-	}
 }
 
 /**
@@ -697,29 +659,5 @@ class TajirEntityDamageZone
 	void AddValue( float amount )
 	{
 		m_value += amount;
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{		
-		s.Write( m_zone );
-		s.Write( m_type );
-		s.Write( m_value );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( m_zone );
-		s.Read( m_type );
-		s.Read( m_value );
 	}
 }

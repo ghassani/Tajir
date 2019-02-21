@@ -154,30 +154,4 @@ class TajirStoreTransactionResponse
 	{
 		return m_amount;
 	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( m_request );
-		s.Write( m_error );
-		s.Write( m_id );
-		s.Write( m_amount );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{		
-		s.Read( m_request );
-		s.Read( m_error );
-		s.Read( m_id );
-		s.Read( m_amount );
-	}
 }

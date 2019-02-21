@@ -106,28 +106,6 @@ class TajirStoreInventoryUpdates
 	{
 		items.Insert( TajirStoreInventoryUpdate( item ) );
 	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( items );
-		s.Write( storeLastRestockTimes );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( items );
-		s.Read( storeLastRestockTimes );
-	}
 }
 
 /**
@@ -151,29 +129,5 @@ class TajirStoreInventoryUpdate
 		storeId  = item.GetCatalog().GetStore().GetId();
 		itemId   = item.GetId();
 		quantity = item.GetQuantity();
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( storeId );
-		s.Write( itemId );
-		s.Write( quantity );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( storeId );
-		s.Read( itemId );
-		s.Read( quantity );
 	}
 }

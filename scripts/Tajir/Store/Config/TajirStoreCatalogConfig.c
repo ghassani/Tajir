@@ -23,28 +23,4 @@ class TajirStoreCatalogConfig
 	{
 		items 	= new array<ref TajirStoreCatalogItemConfig>;
 	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( name );
-		s.Write( hidden );
-		s.Write( items );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( name );
-		s.Read( hidden );
-		s.Read( items );
-	}
 }

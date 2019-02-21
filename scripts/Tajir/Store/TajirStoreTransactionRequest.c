@@ -205,36 +205,4 @@ class TajirStoreTransactionRequest
 	{
 		return m_item;
 	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( m_type );
-		s.Write( m_merchantId );
-		s.Write( m_storeId );
-		s.Write( m_itemId );
-		s.Write( m_item );
-		s.Write( m_quantity );
-		s.Write( m_time );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( m_type );
-		s.Read( m_merchantId );
-		s.Read( m_storeId );
-		s.Read( m_itemId );
-		s.Read( m_item );
-		s.Read( m_quantity );
-		s.Read( m_time );
-	}
 }

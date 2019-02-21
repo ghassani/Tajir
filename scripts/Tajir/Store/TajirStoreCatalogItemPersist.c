@@ -59,29 +59,5 @@ class TajirStoreCatalogItemPersist
 	{
 		return m_quantity;
 	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( m_storeId );
-		s.Write( m_itemId );
-		s.Write( m_quantity );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( m_storeId );
-		s.Read( m_itemId );
-		s.Read( m_quantity );
-	}
 }
 

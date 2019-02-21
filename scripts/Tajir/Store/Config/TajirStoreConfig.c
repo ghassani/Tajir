@@ -35,40 +35,4 @@ class TajirStoreConfig
 		catalogs 			= new array<ref TajirStoreCatalogConfig>;
 		allowed_conditions	= new array<int>;
 	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Serialize( Serializer s )
-	{
-		s.Write( id );
-		s.Write( name );
-		s.Write( type );
-		s.Write( log_transactions );
-		s.Write( save_every_minutes );
-		s.Write( restock_every_minutes );
-		s.Write( show_out_of_stock );
-		s.Write( allowed_conditions );
-		s.Write( catalogs );
-	}
-
-	/**
-	 * @brief      { function_description }
-	 *
-	 * @param[in]  s     { parameter_description }
-	 */
-	void Deserialize( Serializer s )
-	{
-		s.Read( id );
-		s.Read( name );
-		s.Read( type );
-		s.Read( log_transactions );
-		s.Read( save_every_minutes );
-		s.Read( restock_every_minutes );
-		s.Read( show_out_of_stock );
-		s.Read( allowed_conditions );
-		s.Read( catalogs );
-	}
 }

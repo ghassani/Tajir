@@ -18,16 +18,4 @@ class TajirDebugMerchantInfo
 		id 		= merchant.GetId();
 		state 	= new TajirEntityHealthSaveState( EntityAI.Cast( merchant.GetObject() ) );
 	}
-
-	void Serialize( Serializer s )
-	{
-		s.Write( id );
-		s.Write( state );
-	}
-
-	void Deserialize( Serializer s )
-	{
-		s.Read( id );
-		s.Read( state );
-	}
 }

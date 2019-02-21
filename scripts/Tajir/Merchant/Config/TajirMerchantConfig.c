@@ -30,34 +30,4 @@ class TajirMerchantConfig
 		transport_bays = new array<ref TajirMerchantTransportBayConfig>;
 		clothing = new TajirMerchantClothingConfig();
 	}
-
-	void Serialize( Serializer s )
-	{
-		s.Write( id );
-		s.Write( name );
-		s.Write( object_name );
-		s.Write( store );
-		s.Write( unkillable );
-		s.Write( position );
-		s.Write( orientation );
-		s.Write( network_id_low );
-		s.Write( network_id_high );
-		s.Write( transport_bays );
-		s.Write( clothing );
-	}
-
-	void Deserialize( Serializer s )
-	{
-		s.Read( id );
-		s.Read( name );
-		s.Read( object_name );
-		s.Read( store );
-		s.Read( unkillable );
-		s.Read( position );
-		s.Read( orientation );
-		s.Read( network_id_low );
-		s.Read( network_id_high );
-		s.Read( transport_bays );
-		s.Read( clothing );
-	}
 }
