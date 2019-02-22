@@ -19,8 +19,8 @@ class TajirCurrencyComponent extends TajirComponentBase
 	 */
 	void TajirCurrencyComponent( notnull TajirManager manager )
 	{
-		m_name 	 			= "TajirCurrency";
-		m_config 			= new TajirCurrencyConfig();
+		m_name 	 	= "TajirCurrency";
+		m_config 	= new TajirCurrencyConfig();
 	}
 
 	/**
@@ -41,16 +41,7 @@ class TajirCurrencyComponent extends TajirComponentBase
 	{
 		if ( TajirManager.GetInstance() )
 		{
-			if ( TajirManager.GetInstance().HasComponent( "TajirCurrency" ) )
-			{
-				return TajirCurrencyComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirCurrency" ) );
-			}
-			
-			Error( "No Instance of TajirCurrency" );
-		}
-		else
-		{
-			Error( "No Instance of TajirManager" );
+			return TajirCurrencyComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirCurrency" ) );
 		}
 
 		return NULL;		

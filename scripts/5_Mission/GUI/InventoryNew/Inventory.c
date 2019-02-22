@@ -1,10 +1,11 @@
 modded class Inventory
 {
-	protected Widget m_playerCurrency;
-
-	protected TextWidget m_playerCurrencyText;
-
-	protected EditBoxWidget m_removeCurrencyAmount;
+	protected Widget 			m_playerCurrency;
+	protected TextWidget	 	m_playerCurrencyText;
+	protected EditBoxWidget 	m_removeCurrencyAmount;
+	protected ButtonWidget 		m_removeFundsButton;
+	protected ButtonWidget 		m_canceButton;
+	protected ButtonWidget 		m_moveButton;
 
 	protected Widget m_removeFundsWindow;
 
@@ -14,10 +15,13 @@ modded class Inventory
 		m_removeFundsWindow  	 = GetGame().GetWorkspace().CreateWidgets( "Tajir/gui/layouts/remove_funds_dialog.layout", GetMainWidget() );
 		m_playerCurrencyText 	 = TextWidget.Cast( m_playerCurrency.FindAnyWidget( "PlayerCurrencyValue" ) );
 		m_removeCurrencyAmount 	 = EditBoxWidget.Cast( m_removeFundsWindow.FindAnyWidget( "Amount" ) );
+		m_removeFundsButton 	 = ButtonWidget.Cast( m_playerCurrency.FindAnyWidget( "RemoveFundsButton" ) );
+		m_canceButton 	 		 = ButtonWidget.Cast( m_removeFundsWindow.FindAnyWidget( "CancelButton" ) );
+		m_moveButton 	 		 = ButtonWidget.Cast( m_removeFundsWindow.FindAnyWidget( "MoveButton" ) );
 		
-		WidgetEventHandler.GetInstance().RegisterOnClick( m_playerCurrency.FindAnyWidget( "RemoveFundsButton" ),  this, "OnRemoveFundsToggle" );
-		WidgetEventHandler.GetInstance().RegisterOnClick( m_removeFundsWindow.FindAnyWidget( "CancelButton" ),  this, "OnRemoveFundsToggle" );
-		WidgetEventHandler.GetInstance().RegisterOnClick( m_removeFundsWindow.FindAnyWidget( "MoveButton" ),  this, "DoRemoveFunds" );
+		WidgetEventHandler.GetInstance().RegisterOnClick( m_removeFundsButton,  this, "OnRemoveFundsToggle" );
+		WidgetEventHandler.GetInstance().RegisterOnClick( m_canceButton,  this, "OnRemoveFundsToggle" );
+		WidgetEventHandler.GetInstance().RegisterOnClick( m_moveButton,  this, "DoRemoveFunds" );
 
 		m_removeCurrencyAmount.SetText( "0" );
 		m_removeFundsWindow.Show( false );
@@ -27,9 +31,9 @@ modded class Inventory
 
 	void ~Inventory()
 	{
-		WidgetEventHandler.GetInstance().UnregisterWidget( m_playerCurrency.FindAnyWidget( "RemoveFundsButton" ) );
-		WidgetEventHandler.GetInstance().UnregisterWidget( m_playerCurrency.FindAnyWidget( "CancelButton" ) );
-		WidgetEventHandler.GetInstance().UnregisterWidget( m_playerCurrency.FindAnyWidget( "MoveButton" ) );
+		if ( m_removeFundsButton )	WidgetEventHandler.GetInstance().UnregisterWidget( m_removeFundsButton );
+		if ( m_canceButton )		WidgetEventHandler.GetInstance().UnregisterWidget( m_canceButton );
+		if ( m_moveButton )			WidgetEventHandler.GetInstance().UnregisterWidget( m_moveButton );
 	}
 
 	void OnRemoveFundsToggle()

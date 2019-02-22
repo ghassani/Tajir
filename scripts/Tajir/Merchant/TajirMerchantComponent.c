@@ -27,12 +27,6 @@ class TajirMerchantComponent extends TajirComponentBase
 		m_name 	 	= "TajirMerchants";
 		m_config 	= new array<ref TajirMerchantConfig>;
 		m_merchants = new array<ref TajirMerchant>;
-
-		if ( !manager.HasComponent( "TajirStores" ) )
-		{
-			Error2( ClassName(), "TajirStores Component Required" );
-			return;
-		}
 	}
 
 	/**
@@ -56,16 +50,7 @@ class TajirMerchantComponent extends TajirComponentBase
 	{
 		if ( TajirManager.GetInstance() )
 		{
-			if ( TajirManager.GetInstance().HasComponent( "TajirMerchants" ) )
-			{
-				return TajirMerchantComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirMerchants" ) );
-			}
-			
-			Error( "No Instance of TajirMerchants" );
-		}
-		else
-		{
-			Error( "No Instance of TajirManager" );
+			return TajirMerchantComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirMerchants" ) );
 		}
 		
 		return NULL;

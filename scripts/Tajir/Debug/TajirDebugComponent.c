@@ -21,8 +21,6 @@ class TajirDebugComponent extends TajirComponentBase
 {
 	protected ref TajirDebugMenu m_menu;
 
-	protected ref TajirDebugOutpostInfo m_lastOutpostInfo;
-
 	/**
 	 * @brief      Constructor
 	 *
@@ -31,8 +29,6 @@ class TajirDebugComponent extends TajirComponentBase
 	void TajirDebugComponent( notnull TajirManager manager )
 	{
 		m_name 		      = "TajirDebug";
-
-		m_lastOutpostInfo = new TajirDebugOutpostInfo();
 	}
 
 	/**
@@ -48,13 +44,12 @@ class TajirDebugComponent extends TajirComponentBase
 	 */
 	static TajirDebugComponent GetInstance()
 	{
-		return TajirDebugComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirDebug" ) );
-	}
-
-
-	TajirDebugOutpostInfo GetLastOutpostInfo()
-	{
-		return m_lastOutpostInfo;
+		if ( TajirManager.GetInstance() )
+		{
+			return TajirDebugComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirDebug" ) );
+		}
+		
+		return NULL;
 	}
 
 	/**
@@ -287,27 +282,6 @@ class TajirDebugComponent extends TajirComponentBase
 		player.RPCSingleParam( TajirDebugComponentRPC.ServerRPC_UpdatePlayerResponse, new Param1<TajirEntityHealthSaveState>( state ), true, player.GetIdentity() );
 	}
 
-	void ReadOutpostInfoResponse( ParamsReadContext ctx )
-	{
-		ref Param1<ref TajirDebugOutpostInfo> params = new Param1<ref TajirDebugOutpostInfo>( m_lastOutpostInfo );
-
-		if ( !ctx.Read( params ) ) 
-		{
-			TajirLogE( string.Format( "Error Reading Update Player Request" ), ClassName() );
-			return;
-		}
-
-		if ( GetGame().GetUIManager().GetMenu() && GetGame().GetUIManager().GetMenu().GetID() == TAJIR_MENU_DEBUG_ID )
-		{
-			TajirDebugMenu menu = TajirDebugMenu.Cast(  GetGame().GetUIManager().GetMenu() );
-
-			if ( menu )
-			{
-				//menu.UpdateOutpostInfo( m_lastOutpostInfo );
-			}
-		}
-	}
-
 	protected void SpawnManWithCurrency( PlayerBase player, ParamsReadContext ctx )
 	{
 		vector pos = Vector( 0, 0, 0 );
@@ -534,7 +508,7 @@ class TajirDebugComponent extends TajirComponentBase
 			outpost.GetSafeZoneConfig().unlock_give_saline 		= config.unlock_give_saline;
 			outpost.GetSafeZoneConfig().unlock_splint			= config.unlock_splint;
 			outpost.GetSafeZoneConfig().unlock_test_blood 		= config.unlock_test_blood;
-			outpost.GetSafeZoneConfig().unlock_cover_head 		= config.unlock_cover_head
+			outpost.GetSafeZoneConfig().unlock_cover_head 		= config.unlock_cover_head;
 			outpost.GetSafeZoneConfig().unlock_force_feed	 	= config.unlock_force_feed;
 			outpost.GetSafeZoneConfig().unlock_gag 				= config.unlock_gag;
 			outpost.GetSafeZoneConfig().unlock_door_locking 	= config.unlock_door_locking;

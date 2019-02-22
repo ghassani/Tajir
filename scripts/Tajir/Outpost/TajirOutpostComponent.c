@@ -16,7 +16,7 @@ class TajirOutpostComponent extends TajirComponentBase
 
 	protected ref array<ref TajirOutpost> 		m_outposts;
 
-	protected int m_updateEvery = 1000;
+	protected int m_updateEvery = 1500;
 
 	protected int m_updateLast = 0;
 	
@@ -28,12 +28,6 @@ class TajirOutpostComponent extends TajirComponentBase
 		m_name 	 	= "TajirOutposts";
 		m_config 	= new array<ref TajirOutpostConfig>;
 		m_outposts 	= new ref array<ref TajirOutpost>;
-
-		if ( !manager.HasComponent( "TajirMerchants" ) )
-		{
-			Error2( ClassName(), "TajirMerchants Component Required" );
-			return;
-		}
 	}
 
 	/**
@@ -60,16 +54,7 @@ class TajirOutpostComponent extends TajirComponentBase
 	{
 		if ( TajirManager.GetInstance() )
 		{
-			if ( TajirManager.GetInstance().HasComponent( "TajirOutposts" ) )
-			{
-				return TajirOutpostComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirOutposts" ) );
-			}
-			
-			Error( "No Instance of TajirOutposts" );
-		}
-		else
-		{
-			Error( "No Instance of TajirManager" );
+			return TajirOutpostComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirOutposts" ) );
 		}	
 		
 		return NULL;
@@ -354,7 +339,19 @@ class TajirOutpostComponent extends TajirComponentBase
 
 				if ( object.IsInherited( PlayerBase ) )
 				{
-					players.Insert( PlayerBase.Cast( object ) );
+					player = PlayerBase.Cast( object );
+
+					if ( GetGame().GetMission().IsPlayerDisconnecting( Man.Cast( player ) ) )
+					{
+						if ( outpost.HasPlayer( player ) )
+						{
+							outpost.RemovePlayer( player );
+						}
+
+						continue;
+					}
+
+					players.Insert( player );
 				}
 				else if ( object.IsInherited( Transport ) )
 				{
@@ -362,9 +359,14 @@ class TajirOutpostComponent extends TajirComponentBase
 				}
 			}
 
-			ProcessOutpostThreats( outpost, threats );
-			ProcessOutpostPlayers( outpost, players );
+			if ( threats.Count() )
+			{
+				ProcessOutpostThreats( outpost, threats );
+			}		
+			
 			ProcessOutpostTransports( outpost, transports );
+
+			ProcessOutpostPlayers( outpost, players );		
 		}
 	}
 

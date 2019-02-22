@@ -23,12 +23,6 @@ class TajirItemComponent extends TajirComponentBase
 	 */
 	void TajirItemComponent( notnull TajirManager manager )
 	{
-		if ( !manager.HasComponent( "TajirCurrency" ) )
-		{
-			Error2( ClassName(), "TajirCurrency Component Required" );
-			return;
-		}
-
 		m_name 	 = "TajirItems";
 		m_config = new array<ref TajirItemConfig>;
 		m_items  = new array<ref TajirItem>;
@@ -43,16 +37,7 @@ class TajirItemComponent extends TajirComponentBase
 	{
 		if ( TajirManager.GetInstance() )
 		{
-			if ( TajirManager.GetInstance().HasComponent( "TajirItems" ) )
-			{
-				return TajirItemComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirItems" ) );
-			}
-			
-			Error( "No Instance of TajirItems" );
-		}
-		else
-		{
-			Error( "No Instance of TajirManager" );
+			return TajirItemComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirItems" ) );			
 		}
 
 		return NULL;	

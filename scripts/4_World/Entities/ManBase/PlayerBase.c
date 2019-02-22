@@ -9,24 +9,6 @@
 
 modded class PlayerBase
 {
-
-	override void EEHealthLevelChanged( int oldLevel, int newLevel, string zone )
-	{
-		
-		super.EEHealthLevelChanged( oldLevel, newLevel, zone );
-
-		if ( !CommitedSuicide() )
-		{
-			if ( IsInSafeZone() || ( IsMerchant() && m_merchant.IsUnkillable() ) )
-			{
-				TajirLogD( string.Format( "EEHealthLevelChanged Old Level %1 New Level %2 Zone %3 - %4 / %5", oldLevel, newLevel, zone, GetType(), GetHealth( "", "" ) ), ClassName() );
-				
-				m_HealthLevel = 0;
-				SetSynchDirty();
-			}
-		}
-	}
-
 	override void EEKilled( Object killer )
 	{
 		if ( !CommitedSuicide() )
@@ -65,14 +47,11 @@ modded class PlayerBase
 				m_KilledByHeadshot = false;
 
 				TajirLogD( string.Format( "EEHitBy In Outpost: %1 In Safe Zone: %2 Merchant: %3 At %4 Alive: %5 HealthLevel: %6 Zone Level: %7", IsInOutpost(), IsInSafeZone(), IsMerchant(), dmgZone, IsAlive(), GetHealthLevel(), GetHealthLevel(dmgZone) ), ClassName() );
-				
-				//ref TajirEntityHealthSaveState state = new TajirEntityHealthSaveState( this );
-				//state.DebugLogCurrentState();
 
 				return;
 			}
 
-			if ( source ) 
+			if ( source )
 			{
 				ManBase attacker = ManBase.Cast( source.GetHierarchyRootPlayer() );
 				
