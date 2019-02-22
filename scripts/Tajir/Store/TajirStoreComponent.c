@@ -29,12 +29,6 @@ class TajirStoreComponent extends TajirComponentBase
 	 */
 	void TajirStoreComponent( notnull TajirManager manager )
 	{
-		if ( !manager.HasComponent( "TajirCurrency" ) )
-		{
-			Error( "TajirCurrency Component Required" );
-			return;
-		}
-
 		m_name 	 				= "TajirStores";
 		m_config 				= new array<ref TajirStoreConfig>;
 		m_stores 				= new array<ref TajirStore>;
@@ -52,16 +46,7 @@ class TajirStoreComponent extends TajirComponentBase
 	{
 		if ( TajirManager.GetInstance() )
 		{
-			if ( TajirManager.GetInstance().HasComponent( "TajirStores" ) )
-			{
-				return TajirStoreComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirStores" ) );
-			}
-			
-			Error( "No Instance of TajirStores" );
-		}
-		else
-		{
-			Error( "No Instance of TajirManager" );
+			return TajirStoreComponent.Cast( TajirManager.GetInstance().GetComponent( "TajirStores" ) );			
 		}
 
 		return NULL;	
@@ -410,7 +395,7 @@ class TajirStoreComponent extends TajirComponentBase
 		
 		if ( m_menu )
 		{
-			request = m_menu.GetScript().GetTransaction();
+			request = m_menu.GetTransaction();
 		}
 
 		ref TajirStoreTransactionResponse response 	= new TajirStoreTransactionResponse( NULL, request );

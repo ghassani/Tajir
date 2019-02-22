@@ -22,24 +22,11 @@ class TajirStoreTypeBase
 	}
 	
 	/**
-	 * @brief      Creates a catalog root widget.
+	 * @brief      Creates the catalog wid
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	Widget CreateCatalogRootWidget()
-	{
-		Error( "Method " + ClassName() + ":CreateCatalogRootWidget must be overloaded" );
-		return NULL;
-	}
-
-	/**
-	 * @brief      Creates a catalog widget.
-	 *
-	 * @param[in]  root  The root
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	Widget CreateCatalogWidget( Widget root )
+	Widget CreateMenuWidget()
 	{
 		Error( "Method " + ClassName() + ":CreateCatalogWidget must be overloaded" );
 		return NULL;
@@ -54,7 +41,7 @@ class TajirStoreTypeBase
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	TajirStoreMenuBase CreateMenu( notnull TajirStoreComponent component, notnull TajirStore store, TajirMerchant merchant = NULL )
+	TajirStoreMenuBase CreateMenu( notnull TajirStoreComponent component, notnull TajirStore store, TajirMerchant merchant )
 	{
 		Error( "Method " + ClassName() + ":CreateMenu must be overloaded" );
 		return NULL;

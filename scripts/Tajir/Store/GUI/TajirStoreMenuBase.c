@@ -9,21 +9,21 @@
 
 class TajirStoreMenuBase extends UIScriptedMenu
 {
-	protected TajirStoreComponent 			m_component;
+	protected TajirStoreComponent 				m_component;
 
-	protected TajirStore 					m_store;
+	protected TajirStore 						m_store;
 
-	protected TajirMerchant 				m_merchant;
+	protected TajirMerchant 					m_merchant;
 
-	protected ref TajirStoreTypeMenuBase 	m_catalogMenuScript;
-
+	protected ref TajirStoreTransactionRequest 	m_transaction;
+	
 	/**
 	 * @brief      Constructor
 	 *
 	 * @param[in]  TajirStore     The store
 	 * @param[in]  TajirMerchant|NULL  The merchant
 	 */
-	void TajirStoreMenuBase( notnull TajirStoreComponent component, notnull TajirStore store, TajirMerchant merchant = NULL )
+	void TajirStoreMenuBase( notnull TajirStoreComponent component, notnull TajirStore store, notnull TajirMerchant merchant )
 	{		
 		m_component = component;
 		m_store 	= store;
@@ -36,6 +36,31 @@ class TajirStoreMenuBase extends UIScriptedMenu
 	void ~TajirStoreMenuBase()
 	{
 	}
+
+
+	/**
+	 * @brief      Initialize the root of the menu
+	 *
+	 * @return     Widget
+	 */
+	override Widget Init()
+	{
+		if ( !m_store.GetTypeHandler() )
+		{
+			TajirLogE( string.Format( "Store ID %1 Type Handler Invalid", m_store.GetId() ), ClassName() );
+			return NULL;
+		}
+
+		layoutRoot = m_store.GetTypeHandler().CreateMenuWidget();
+		
+		if ( !layoutRoot )
+		{
+			TajirLogE( string.Format( "Store ID %1 Type Handler Did Not Create Widget", m_store.GetId() ), ClassName() );
+			return NULL;
+		}
+
+		return layoutRoot;
+	}
 	
 	/**
 	 * @brief      Get the menu id.
@@ -46,16 +71,6 @@ class TajirStoreMenuBase extends UIScriptedMenu
 		return TAJIR_MENU_STORE_ID;
 	}
 	
-	/**
-	 * @brief      Gets the script.
-	 *
-	 * @return     TajirStoreTypeMenuBase.
-	 */
-	TajirStoreTypeMenuBase GetScript()
-	{
-		return m_catalogMenuScript;
-	}
-
 	/**
 	 * @brief      Get the store.
 	 *
@@ -119,6 +134,58 @@ class TajirStoreMenuBase extends UIScriptedMenu
 		{
 			m_component.OnMenuClose();
 		}
+	}
+
+	/**
+	 * @brief      Gets the transaction.
+	 *
+	 * @return     The transaction.
+	 */
+	TajirStoreTransactionRequest GetTransaction()
+	{
+		return m_transaction;
+	}
+
+	/**
+	 * @brief      Determines if it has transaction.
+	 *
+	 * @return     True if has transaction, False otherwise.
+	 */
+	bool HasTransaction()
+	{
+		return m_transaction != NULL;
+	}
+
+	/**
+	 * @brief      Builds a human readable string for a players inventory item location.
+	 */
+	protected string BuildItemLocationString( notnull EntityAI item, InventoryLocation location )
+	{
+		switch ( location.GetType() )
+		{
+			case InventoryLocationType.ATTACHMENT:
+				if ( location.GetParent().IsMan() )
+				{
+					return "Equipped";
+				}
+				else
+				{
+					return string.Format( "Attached to %1", location.GetParent().GetDisplayName() );
+				}
+
+				break;
+			case InventoryLocationType.CARGO:
+				return string.Format( "In %1", location.GetParent().GetDisplayName() );
+				break;
+			case InventoryLocationType.GROUND:
+				return "Equipped";
+				break;
+			case InventoryLocationType.HANDS:
+				return "Your Hands";
+				break;
+		}
+
+		return "";
 	}
 
 	/**

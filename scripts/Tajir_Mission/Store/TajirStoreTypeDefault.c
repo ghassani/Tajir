@@ -20,37 +20,12 @@ class TajirStoreTypeDefault extends TajirStoreTypeBase
 		m_name = "default";
 	}
 
-	/**
-	 * @brief      Creates a catalog root widget.
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	override Widget CreateCatalogRootWidget()
+	override Widget CreateMenuWidget()
 	{
-		m_root = GetGame().GetWorkspace().CreateWidgets( "Tajir/gui/layouts/store.layout" );
-		return m_root;
+		return GetGame().GetWorkspace().CreateWidgets( "Tajir/gui/layouts/store_default.layout" );
 	}
 
-	/**
-	 * @brief      Creates a catalog widget.
-	 *
-	 * @param[in]  root  The root
-	 *
-	 * @return     Widget
-	 */
-	override Widget CreateCatalogWidget( Widget root )
-	{
-		m_catalog = GetGame().GetWorkspace().CreateWidgets( "Tajir/gui/layouts/store_default.layout", root );	
-		
-		if ( root != m_root )
-		{
-			m_root = root;
-		}
-
-		return m_catalog;
-	}
-
-	override TajirStoreMenuBase CreateMenu( notnull TajirStoreComponent component, notnull TajirStore store, TajirMerchant merchant = NULL )
+	override TajirStoreMenuBase CreateMenu( notnull TajirStoreComponent component, notnull TajirStore store, TajirMerchant merchant )
 	{
 		return new TajirStoreMenu( component, store, merchant );
 	}
