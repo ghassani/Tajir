@@ -57,11 +57,13 @@ class TajirStoreMenu extends TajirStoreMenuBase
 	protected ref array<ref TajirStoreItemListData> m_buyListData;
 	protected ref array<ref TajirStoreItemListData> m_sellListData;
 	protected ref array<TajirStoreCatalog> 			m_catalogs;
+	protected PlayerBase 							m_player;
 	
 	void TajirStoreMenu( notnull TajirStoreComponent component, notnull TajirStore store, notnull TajirMerchant merchant )
 	{
 		m_buyListData  = new array<ref TajirStoreItemListData>;
 		m_sellListData = new array<ref TajirStoreItemListData>;
+		m_player 		= PlayerBase.Cast( GetGame().GetPlayer() );
 	}
 
 	void ~TajirStoreMenu()
@@ -322,9 +324,16 @@ class TajirStoreMenu extends TajirStoreMenuBase
 	 */
 	override void OnInventoryUpdateReceived( ref array<TajirStore> updatedStores )
 	{
-		if ( updatedStores.Find( m_store ) )
+		for ( int row = 0; row < m_buyInventory.GetNumItems(); row++ )
 		{
-			UpdateCurrentInventoryView();
+			TajirStoreItemListData data;
+
+			m_buyInventory.GetItemData( row, TajirStoreTypeDefaultMenuTabBuyColumns.Data, data );
+
+			if ( data )
+			{
+				m_buyInventory.SetItem( row, data.GetItem().GetQuantity().ToString(), NULL, TajirStoreTypeDefaultMenuTabBuyColumns.Quantity );
+			}
 		}
 	}
 
@@ -335,20 +344,49 @@ class TajirStoreMenu extends TajirStoreMenuBase
 	 */
 	override void OnTransactionResponseReceived( TajirStoreTransactionResponse response )
 	{
-		delete m_transaction;
-		
-		m_transaction = NULL;
+		if ( response && !response.IsError() && response.GetRequest().GetType() == TajirStoreTransactionRequestType.Sell )
+		{
+			for ( int row = 0; row < m_sellInventory.GetNumItems(); row++ )
+			{
+				TajirStoreItemListData data;
 
+				m_sellInventory.GetItemData( row, TajirStoreTypeDefaultMenuTabSellColumns.Data, data );
+
+				if ( data )
+				{
+					if ( data.GetObject() && data.GetObject() == response.GetRequest().GetPlayerItem() )
+					{
+						if ( !data.GetObject().IsItemBase() )
+						{
+							m_sellInventory.RemoveRow( row );
+						}
+						else
+						{
+							ItemBase soldItem = ItemBase.Cast( data.GetObject() );
+
+							if ( !soldItem.GetQuantity() )
+							{
+								m_sellInventory.RemoveRow( row );
+							}
+							else
+							{
+								m_sellInventory.SetItem( row, soldItem.GetQuantity().ToString(), NULL, TajirStoreTypeDefaultMenuTabSellColumns.Quantity );
+							}
+						}					
+					}
+				}
+			}
+		}
+
+		SetProcessingState( false );		
 		UpdatePlayerCurrency();
-		UpdateCurrentInventoryView();
 
-		SetProcessingState( false );
-			
-		// TODO: fix this ugliness
-		//GetGame().GetCallQueue( CALL_CATEGORY_GUI ).CallLater( this.UpdateCurrentInventoryView, 500, false );
-		//GetGame().GetCallQueue( CALL_CATEGORY_GUI ).CallLater( this.SetProcessingState, 600, false, false );
+		if ( m_transaction )
+		{
+			delete m_transaction;
+			m_transaction = NULL;
+		}		
 	}
-
 
 	/**
 	 * @brief      Populates the buy tab pane's catalog selection list.
@@ -607,7 +645,6 @@ class TajirStoreMenu extends TajirStoreMenuBase
 				}
 				else
 				{
-					
 					if ( data.GetItem().GetDisplayObjectName().Length() )
 					{
 						object = GetGame().CreateObject( data.GetItem().GetObjectName(), Vector( 0, 0, 0 ), true, false, false );
@@ -859,7 +896,7 @@ class TajirStoreMenu extends TajirStoreMenuBase
 		}
 		else if ( !m_store.AcceptsItemCondition( data.GetObject().GetHealthLevel() ) )
 		{
-			TajirManager.GetInstance().ShowNotification( TajirNotificationType.Error, "Can\t sell item in that condition", 1000 );
+			TajirManager.GetInstance().ShowNotification( TajirNotificationType.Error, "Can\'t sell item in that condition", 1000 );
 			return;
 		}
 

@@ -347,7 +347,7 @@ class TajirStoreTypeDefault extends TajirStoreTypeBase
 	 * @param[in]  TajirMerchant          	The tajir merchant
 	 * @param[in]  TajirStore            	The tajir store
 	 * @param[in]  TajirStoreTransaction  	The tajir store transaction
-	 * @param[in]  TajirItemBundle The bundle item
+	 * @param[in]  TajirItemBundle 			The bundle item
 	 * @param[in]  EntityAI|NULL  			The items parent object, to be attached to or inserted into its cargo
 	 *
 	 * @return     bool

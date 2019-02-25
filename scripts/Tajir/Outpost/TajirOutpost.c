@@ -385,4 +385,24 @@ class TajirOutpost
 	{
 		m_players.Clear();
 	}
+
+	array<Transport> GetPlayerTransports( notnull PlayerBase player )
+	{
+		ref array<Transport> ret  = new array<Transport>;
+
+		foreach( Transport transport : m_transports )
+		{
+			if ( transport.IsInherited( CarScript ) )
+			{
+				CarScript car = CarScript.Cast( transport );
+
+				if ( car.GetOwner() == player.GetIdentity().GetId() )
+				{
+					ret.Insert( transport );
+				}
+			}
+		}
+
+		return ret;
+	}
 }

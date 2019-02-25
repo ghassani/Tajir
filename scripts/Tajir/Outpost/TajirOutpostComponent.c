@@ -172,6 +172,46 @@ class TajirOutpostComponent extends TajirComponentBase
 				break;
 		}
 	}
+	
+	/**
+	 * @brief      Executed on client when RPC is recieved.
+	 *
+	 * @param[in]  sender    PlayerIdentity 
+	 * @param[in]  target    Object
+	 * @param[in]  rpc_type  int
+	 * @param[in]  ctx       ParamsReadContext
+	 */
+	void OnServerRPC( PlayerIdentity sender, Object target, int rpc_type, ParamsReadContext ctx )
+	{
+		switch ( rpc_type )
+		{
+			case TajirOutpostComponentRPC.ServerRPC_PlayerTransports:
+				SendPlayerTransportList( sender, target, ctx );
+				break;
+		}
+	}
+
+	void SendPlayerTransportList( PlayerIdentity sender, Object target, ParamsReadContext ctx )
+	{
+		ref Param1<int> params = new Param1<int>( 0 );
+
+		if ( !ctx.Read( params ) ) 
+		{
+			SetConfigured( false );
+
+			TajirLogE( "Error Reading Player Transport List Request From Server", ClassName() );
+
+			return;
+		}
+
+		TajirOutpost outpost = GetOutpost( params.param1 );
+
+		if ( outpost )
+		{
+			
+		}
+
+	}
 
 	/**
 	 * @brief      Handles showing user notifications related to entering a outpost area.
